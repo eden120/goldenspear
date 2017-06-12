@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GSTagView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="360"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rhq-Nh-yLd">
+                    <rect key="frame" x="8" y="8" width="584" height="344"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80122451241560266" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rhq-Nh-yLd" secondAttribute="bottom" constant="8" id="1TV-6t-oIJ"/>
+                <constraint firstItem="rhq-Nh-yLd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="eYf-Ni-D44"/>
+                <constraint firstAttribute="trailing" secondItem="rhq-Nh-yLd" secondAttribute="trailing" constant="8" id="ndq-on-WFc"/>
+                <constraint firstItem="rhq-Nh-yLd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="zBc-2x-b1Q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="optionsContainer" destination="rhq-Nh-yLd" id="wET-Dz-xAF"/>
+            </connections>
+            <point key="canvasLocation" x="374" y="257"/>
+        </view>
+    </objects>
+</document>

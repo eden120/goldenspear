@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wardrobe View Controller-->
+        <scene sceneID="q18-ms-0WO">
+            <objects>
+                <viewController storyboardIdentifier="6" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jUt-L8-pc0" customClass="WardrobeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ct3-4l-Yrl"/>
+                        <viewControllerLayoutGuide type="bottom" id="PJf-la-jPu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mz5-lR-XNm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ptN-Fa-9Mm">
+                                <rect key="frame" x="0.0" y="235" width="320" height="365"/>
+                                <color key="backgroundColor" white="0.84999999999999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewLayout key="collectionViewLayout" id="Xbt-dI-Vj4" customClass="CollectionViewCustomLayout"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WardrobeCell" id="c7t-dH-ArM" customClass="GSBaseElementCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="jUt-L8-pc0" id="oU3-jc-bRt"/>
+                                    <outlet property="delegate" destination="jUt-L8-pc0" id="Ddg-aM-wLH"/>
+                                </connections>
+                            </collectionView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Type a new name for this Wardrobe Collection" minimumFontSize="17" background="SearchTextFieldBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="04c-oX-Jp4">
+                                <rect key="frame" x="26" y="555" width="548" height="35"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="iV5-Au-izm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <view alpha="0.97999999999999998" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AQQ-Oo-Av0">
+                                <rect key="frame" x="0.0" y="85" width="600" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5cd-cF-6DA">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">   There are elements in your Wardrobe Bin!
+   Please select and add them to the desired Wardrobe Collection.</string>
+                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UW1-Ez-Pz8">
+                                        <rect key="frame" x="0.0" y="40" width="320" height="105"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <collectionViewLayout key="collectionViewLayout" id="5hQ-35-eSx" customClass="CollectionViewCustomLayout"/>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WardrobeBinCell" id="b0S-Gw-Fbq" customClass="GSBaseElementCell">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="jUt-L8-pc0" id="KHU-cP-una"/>
+                                            <outlet property="delegate" destination="jUt-L8-pc0" id="BxE-VX-EGo"/>
+                                        </connections>
+                                    </collectionView>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="md9-3d-iGy">
+                                        <rect key="frame" x="555" y="105" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="02o-g2-df8"/>
+                                            <constraint firstAttribute="height" constant="40" id="dp7-0P-uZc"/>
+                                        </constraints>
+                                        <state key="normal" title="Remove" image="Remove.png">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="7L1-le-Hb3"/>
+                                    <constraint firstAttribute="bottom" secondItem="md9-3d-iGy" secondAttribute="bottom" constant="5" id="8H7-rV-v3G"/>
+                                    <constraint firstItem="UW1-Ez-Pz8" firstAttribute="trailing" secondItem="5cd-cF-6DA" secondAttribute="trailing" id="LN5-MF-2QI"/>
+                                    <constraint firstItem="5cd-cF-6DA" firstAttribute="bottom" secondItem="UW1-Ez-Pz8" secondAttribute="top" id="ODD-W7-SRQ"/>
+                                    <constraint firstItem="5cd-cF-6DA" firstAttribute="leading" secondItem="AQQ-Oo-Av0" secondAttribute="leading" id="QJQ-jZ-53q"/>
+                                    <constraint firstAttribute="trailing" secondItem="5cd-cF-6DA" secondAttribute="trailing" id="QzM-De-8zi"/>
+                                    <constraint firstAttribute="bottom" secondItem="UW1-Ez-Pz8" secondAttribute="bottom" constant="5" id="ZED-wR-sSj"/>
+                                    <constraint firstAttribute="trailing" secondItem="md9-3d-iGy" secondAttribute="trailing" constant="5" id="gmy-3e-T7a"/>
+                                    <constraint firstItem="5cd-cF-6DA" firstAttribute="top" secondItem="AQQ-Oo-Av0" secondAttribute="top" id="h4O-Qi-oCv"/>
+                                    <constraint firstItem="UW1-Ez-Pz8" firstAttribute="top" secondItem="5cd-cF-6DA" secondAttribute="bottom" id="kSj-xx-ipM"/>
+                                    <constraint firstItem="UW1-Ez-Pz8" firstAttribute="leading" secondItem="5cd-cF-6DA" secondAttribute="leading" id="qw9-5r-pTa"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ODD-W7-SRQ"/>
+                                        <exclude reference="LN5-MF-2QI"/>
+                                        <exclude reference="qw9-5r-pTa"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PJf-la-jPu" firstAttribute="top" secondItem="ptN-Fa-9Mm" secondAttribute="bottom" id="11E-UN-1CL"/>
+                            <constraint firstItem="AQQ-Oo-Av0" firstAttribute="top" secondItem="ct3-4l-Yrl" secondAttribute="bottom" constant="65" id="1v0-dQ-Fnj"/>
+                            <constraint firstItem="ptN-Fa-9Mm" firstAttribute="leading" secondItem="Mz5-lR-XNm" secondAttribute="leadingMargin" constant="-16" id="4qh-kM-hs8"/>
+                            <constraint firstItem="AQQ-Oo-Av0" firstAttribute="leading" secondItem="Mz5-lR-XNm" secondAttribute="leadingMargin" constant="-16" id="CNw-R5-bYK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AQQ-Oo-Av0" secondAttribute="trailing" constant="-16" id="Ceu-bx-9U7"/>
+                            <constraint firstItem="AQQ-Oo-Av0" firstAttribute="bottom" secondItem="ptN-Fa-9Mm" secondAttribute="top" id="Fql-VO-9xw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="04c-oX-Jp4" secondAttribute="trailing" constant="10" id="Leq-rM-6dZ"/>
+                            <constraint firstItem="ptN-Fa-9Mm" firstAttribute="top" secondItem="ct3-4l-Yrl" secondAttribute="bottom" constant="-20" id="SrO-CP-kKT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ptN-Fa-9Mm" secondAttribute="trailing" constant="-16" id="acz-aK-MVg"/>
+                            <constraint firstItem="04c-oX-Jp4" firstAttribute="leading" secondItem="Mz5-lR-XNm" secondAttribute="leadingMargin" constant="10" id="e8b-ks-8aD"/>
+                            <constraint firstItem="PJf-la-jPu" firstAttribute="top" secondItem="04c-oX-Jp4" secondAttribute="bottom" constant="10" id="fBe-ne-qdn"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="SrO-CP-kKT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="WardrobeBinView" destination="AQQ-Oo-Av0" id="rVN-7T-d64"/>
+                        <outlet property="WardrobeBinViewHeightConstraint" destination="7L1-le-Hb3" id="qGJ-HT-6hf"/>
+                        <outlet property="bottomConstraints" destination="fBe-ne-qdn" id="dZt-Wc-dph"/>
+                        <outlet property="mainCollectionView" destination="ptN-Fa-9Mm" id="qkN-gF-ep8"/>
+                        <outlet property="mainCollectionViewLayout" destination="Xbt-dI-Vj4" id="sMs-Zt-9Cb"/>
+                        <outlet property="removeWardrobeBinItemsButton" destination="md9-3d-iGy" id="4c7-Ea-WCL"/>
+                        <outlet property="secondCollectionView" destination="UW1-Ez-Pz8" id="J2t-wg-f3g"/>
+                        <outlet property="secondCollectionViewLayout" destination="5hQ-35-eSx" id="3x5-od-MOZ"/>
+                        <outlet property="wardrobeNewName" destination="04c-oX-Jp4" id="iiA-FS-Ian"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfG-rq-fFU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254" y="326"/>
+        </scene>
+        <!--Add Item To Wardrobe View Controller-->
+        <scene sceneID="vWA-xa-Wjp">
+            <objects>
+                <viewController storyboardIdentifier="27" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QaF-T3-Ln0" customClass="AddItemToWardrobeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p3d-rb-Mwk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mjw-cs-W8P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cI4-aK-KgU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k7e-20-SWW">
+                                <rect key="frame" x="21" y="25" width="80" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="WSA-S2-eDQ"/>
+                                    <constraint firstAttribute="height" constant="80" id="vbN-RR-ZRt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Item Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uZz-cc-dB4">
+                                <rect key="frame" x="21" y="105" width="80" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="rEu-eK-qAm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lSR-BH-bqF">
+                                <rect key="frame" x="106" y="25" width="473" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FU4-FZ-TFb"/>
+                                </constraints>
+                                <string key="text">Create or select a Wardrobe Collection
+to store this item</string>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FU4-FZ-TFb"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Collection" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LFr-a3-BZ0">
+                                <rect key="frame" x="21" y="135" width="558" height="30"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Qgy-Ce-pcz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="onEndEditing:" destination="QaF-T3-Ln0" eventType="editingDidEnd" id="8br-l6-hoM"/>
+                                    <action selector="onStartEditing:" destination="QaF-T3-Ln0" eventType="editingDidBegin" id="Rob-nq-jkq"/>
+                                </connections>
+                            </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Your Wardrobe doesn't contain any collection yet!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HaQ-FO-fzG">
+                                <rect key="frame" x="21" y="342" width="558" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ivf-GS-blU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="16"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Dc2-fy-OBA">
+                                <rect key="frame" x="21" y="175" width="558" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="QaF-T3-Ln0" id="NyU-5j-Cq3"/>
+                                    <outlet property="delegate" destination="QaF-T3-Ln0" id="bwc-Q8-X4T"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzH-s9-7vI">
+                                <rect key="frame" x="21" y="555" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Q8V-Pl-5Mr"/>
+                                    <constraint firstAttribute="height" constant="40" id="gbh-MM-3gh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="18"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="CANCEL">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelAddingItemToWardrobe:" destination="QaF-T3-Ln0" eventType="touchUpInside" id="mn9-yf-HjY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkt-L1-kog">
+                                <rect key="frame" x="399" y="555" width="180" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Uhd-A0-tCn"/>
+                                    <constraint firstAttribute="width" constant="180" id="XO8-lG-iLj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="18"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="ADD TO WARDROBE">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addItemToWardrobe:" destination="QaF-T3-Ln0" eventType="touchUpInside" id="fz7-ji-u61"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k7e-20-SWW" firstAttribute="leading" secondItem="LFr-a3-BZ0" secondAttribute="leading" id="0UC-uB-lnL"/>
+                            <constraint firstItem="lSR-BH-bqF" firstAttribute="top" secondItem="p3d-rb-Mwk" secondAttribute="bottom" constant="5" id="1FZ-Dt-oEF"/>
+                            <constraint firstItem="HaQ-FO-fzG" firstAttribute="leading" secondItem="k7e-20-SWW" secondAttribute="leading" id="6M6-2a-xeZ"/>
+                            <constraint firstItem="k7e-20-SWW" firstAttribute="leading" secondItem="Dc2-fy-OBA" secondAttribute="leading" id="FoR-mY-eVd"/>
+                            <constraint firstItem="HaQ-FO-fzG" firstAttribute="trailing" secondItem="k7e-20-SWW" secondAttribute="trailing" constant="483" id="FoW-5b-cIC"/>
+                            <constraint firstItem="LFr-a3-BZ0" firstAttribute="leading" secondItem="k7e-20-SWW" secondAttribute="trailing" constant="10" id="GkR-ML-frR"/>
+                            <constraint firstItem="HaQ-FO-fzG" firstAttribute="top" secondItem="uZz-cc-dB4" secondAttribute="bottom" constant="200" id="JMW-KA-hgg"/>
+                            <constraint firstItem="lSR-BH-bqF" firstAttribute="trailing" secondItem="LFr-a3-BZ0" secondAttribute="trailing" id="K32-K3-yBr"/>
+                            <constraint firstItem="k7e-20-SWW" firstAttribute="centerY" secondItem="LFr-a3-BZ0" secondAttribute="centerY" id="K4y-h8-YfT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lSR-BH-bqF" secondAttribute="trailing" id="L1B-N2-w5q"/>
+                            <constraint firstItem="lSR-BH-bqF" firstAttribute="leading" secondItem="cI4-aK-KgU" secondAttribute="leadingMargin" id="M81-Fo-UOt"/>
+                            <constraint firstItem="lSR-BH-bqF" firstAttribute="trailing" secondItem="LFr-a3-BZ0" secondAttribute="trailing" constant="5" id="NZa-Sp-sgu"/>
+                            <constraint firstItem="lSR-BH-bqF" firstAttribute="trailing" secondItem="cI4-aK-KgU" secondAttribute="trailingMargin" constant="-5" id="Ocj-mk-zjs"/>
+                            <constraint firstItem="uZz-cc-dB4" firstAttribute="bottom" secondItem="Dc2-fy-OBA" secondAttribute="top" constant="-10" id="Tv1-H0-XEM"/>
+                            <constraint firstItem="k7e-20-SWW" firstAttribute="top" secondItem="p3d-rb-Mwk" secondAttribute="bottom" constant="5" id="X1b-5s-H5c"/>
+                            <constraint firstItem="Mjw-cs-W8P" firstAttribute="top" secondItem="hkt-L1-kog" secondAttribute="bottom" constant="5" id="Xld-lI-OgL"/>
+                            <constraint firstItem="uZz-cc-dB4" firstAttribute="bottom" secondItem="LFr-a3-BZ0" secondAttribute="top" constant="-10" id="Y6o-7X-Smw"/>
+                            <constraint firstItem="HaQ-FO-fzG" firstAttribute="trailing" secondItem="lSR-BH-bqF" secondAttribute="trailing" id="ZRn-pV-tPp"/>
+                            <constraint firstItem="k7e-20-SWW" firstAttribute="top" secondItem="LFr-a3-BZ0" secondAttribute="top" id="b7k-LY-5h1"/>
+                            <constraint firstItem="k7e-20-SWW" firstAttribute="leading" secondItem="lSR-BH-bqF" secondAttribute="leading" constant="5" id="bfp-FA-64l"/>
+                            <constraint firstItem="LFr-a3-BZ0" firstAttribute="bottom" secondItem="Dc2-fy-OBA" secondAttribute="top" constant="-10" id="c2k-0r-O4M"/>
+                            <constraint firstItem="nzH-s9-7vI" firstAttribute="top" secondItem="Dc2-fy-OBA" secondAttribute="bottom" constant="5" id="d5H-cf-mbV"/>
+                            <constraint firstItem="uZz-cc-dB4" firstAttribute="leading" secondItem="k7e-20-SWW" secondAttribute="leading" id="dTR-RS-eKv"/>
+                            <constraint firstItem="nzH-s9-7vI" firstAttribute="leading" secondItem="cI4-aK-KgU" secondAttribute="leadingMargin" constant="5" id="dye-sY-Hbr"/>
+                            <constraint firstItem="lSR-BH-bqF" firstAttribute="top" secondItem="k7e-20-SWW" secondAttribute="top" id="eCQ-oE-DkY"/>
+                            <constraint firstItem="HaQ-FO-fzG" firstAttribute="leading" secondItem="Dc2-fy-OBA" secondAttribute="leading" id="ea2-LC-cpa"/>
+                            <constraint firstItem="HaQ-FO-fzG" firstAttribute="trailing" secondItem="Dc2-fy-OBA" secondAttribute="trailing" id="f9B-vd-Ojh"/>
+                            <constraint firstItem="lSR-BH-bqF" firstAttribute="bottom" secondItem="uZz-cc-dB4" secondAttribute="bottom" id="ge1-f7-S8v"/>
+                            <constraint firstItem="lSR-BH-bqF" firstAttribute="trailing" secondItem="Dc2-fy-OBA" secondAttribute="trailing" id="hHw-es-jCc"/>
+                            <constraint firstItem="k7e-20-SWW" firstAttribute="top" secondItem="lSR-BH-bqF" secondAttribute="bottom" constant="5" id="hpM-bs-Tgj"/>
+                            <constraint firstItem="uZz-cc-dB4" firstAttribute="trailing" secondItem="k7e-20-SWW" secondAttribute="trailing" id="kME-8P-H5f"/>
+                            <constraint firstItem="k7e-20-SWW" firstAttribute="leading" secondItem="cI4-aK-KgU" secondAttribute="leadingMargin" constant="5" id="lhz-m8-3xY"/>
+                            <constraint firstItem="k7e-20-SWW" firstAttribute="leading" secondItem="cI4-aK-KgU" secondAttribute="leadingMargin" constant="5" id="lvi-fl-enD"/>
+                            <constraint firstItem="HaQ-FO-fzG" firstAttribute="centerY" secondItem="Dc2-fy-OBA" secondAttribute="centerY" id="mmK-Mp-adC"/>
+                            <constraint firstItem="uZz-cc-dB4" firstAttribute="top" secondItem="k7e-20-SWW" secondAttribute="bottom" id="r8G-Ub-UWl"/>
+                            <constraint firstItem="Mjw-cs-W8P" firstAttribute="top" secondItem="nzH-s9-7vI" secondAttribute="bottom" constant="5" id="rAQ-H5-rz8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hkt-L1-kog" secondAttribute="trailing" constant="5" id="rfH-0w-Xpe"/>
+                            <constraint firstItem="lSR-BH-bqF" firstAttribute="trailing" secondItem="Dc2-fy-OBA" secondAttribute="trailing" constant="5" id="ryg-Vv-rdL"/>
+                            <constraint firstItem="k7e-20-SWW" firstAttribute="top" secondItem="p3d-rb-Mwk" secondAttribute="bottom" constant="5" id="s6A-t5-DTP"/>
+                            <constraint firstItem="lSR-BH-bqF" firstAttribute="leading" secondItem="Dc2-fy-OBA" secondAttribute="leading" constant="-5" id="vMD-8x-6I0"/>
+                            <constraint firstItem="lSR-BH-bqF" firstAttribute="leading" secondItem="k7e-20-SWW" secondAttribute="trailing" constant="5" id="vvX-MZ-IH0"/>
+                            <constraint firstItem="HaQ-FO-fzG" firstAttribute="leading" secondItem="lSR-BH-bqF" secondAttribute="leading" id="xak-fo-rcC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="K4y-h8-YfT"/>
+                                <exclude reference="X1b-5s-H5c"/>
+                                <exclude reference="b7k-LY-5h1"/>
+                                <exclude reference="bfp-FA-64l"/>
+                                <exclude reference="hpM-bs-Tgj"/>
+                                <exclude reference="lvi-fl-enD"/>
+                                <exclude reference="Tv1-H0-XEM"/>
+                                <exclude reference="1FZ-Dt-oEF"/>
+                                <exclude reference="L1B-N2-w5q"/>
+                                <exclude reference="M81-Fo-UOt"/>
+                                <exclude reference="NZa-Sp-sgu"/>
+                                <exclude reference="ryg-Vv-rdL"/>
+                                <exclude reference="vMD-8x-6I0"/>
+                                <exclude reference="GkR-ML-frR"/>
+                                <exclude reference="6M6-2a-xeZ"/>
+                                <exclude reference="FoW-5b-cIC"/>
+                                <exclude reference="JMW-KA-hgg"/>
+                                <exclude reference="ZRn-pV-tPp"/>
+                                <exclude reference="xak-fo-rcC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="addToWardrobeButton" destination="hkt-L1-kog" id="1fg-UK-8p6"/>
+                        <outlet property="controllerTitle" destination="lSR-BH-bqF" id="OhN-CD-afp"/>
+                        <outlet property="itemImage" destination="k7e-20-SWW" id="9Zn-Xt-3Tc"/>
+                        <outlet property="itemName" destination="uZz-cc-dB4" id="bMb-lR-HMu"/>
+                        <outlet property="noCollectionsLabel" destination="HaQ-FO-fzG" id="Fsu-Va-A1Z"/>
+                        <outlet property="wardrobeCollectionName" destination="LFr-a3-BZ0" id="BQL-S6-pMr"/>
+                        <outlet property="wardrobesTable" destination="Dc2-fy-OBA" id="hmA-fk-sPG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bd6-gt-0wW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1058" y="326"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Remove.png" width="100" height="100"/>
+        <image name="SearchTextFieldBackground.png" width="477" height="48"/>
+    </resources>
+</document>

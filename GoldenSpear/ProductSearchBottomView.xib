@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AvantGarde-book.ttf">
+            <string>AvantGarde-Book</string>
+            <string>AvantGarde-Book</string>
+            <string>AvantGarde-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProductSearchBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="04Y-PW-hZE">
+                    <rect key="frame" x="0.0" y="2" width="600" height="1"/>
+                    <color key="backgroundColor" red="0.39215686274509803" green="0.38431372549019605" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="itr-kd-PPY"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVa-Ii-aaa">
+                    <rect key="frame" x="263" y="17" width="70" height="30"/>
+                    <fontDescription key="fontDescription" name="AvantGarde-Book" family="AvantGarde-Book" pointSize="13"/>
+                    <state key="normal" title="Add NEW">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0BT-Qk-V30">
+                    <rect key="frame" x="508" y="17" width="70" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="AvantGarde-Book" family="AvantGarde-Book" pointSize="13"/>
+                    <state key="normal" title="TAG">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tN7-a6-gLs">
+                    <rect key="frame" x="20" y="17" width="70" height="30"/>
+                    <fontDescription key="fontDescription" name="AvantGarde-Book" family="AvantGarde-Book" pointSize="13"/>
+                    <state key="normal" title="SEARCH">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tN7-a6-gLs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="72N-GO-yh2"/>
+                <constraint firstAttribute="trailing" secondItem="0BT-Qk-V30" secondAttribute="trailing" constant="20" id="Amb-QJ-8j1"/>
+                <constraint firstItem="UVa-Ii-aaa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="B0I-O2-FHo"/>
+                <constraint firstItem="0BT-Qk-V30" firstAttribute="height" secondItem="tN7-a6-gLs" secondAttribute="height" id="Hog-zF-Pvg"/>
+                <constraint firstItem="UVa-Ii-aaa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ILT-5P-p9p"/>
+                <constraint firstItem="UVa-Ii-aaa" firstAttribute="width" secondItem="tN7-a6-gLs" secondAttribute="width" id="JPu-f6-GVt"/>
+                <constraint firstItem="UVa-Ii-aaa" firstAttribute="height" secondItem="tN7-a6-gLs" secondAttribute="height" id="NG4-qY-uJb"/>
+                <constraint firstItem="0BT-Qk-V30" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="chi-JN-CJj"/>
+                <constraint firstItem="04Y-PW-hZE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mWh-99-TXp"/>
+                <constraint firstItem="tN7-a6-gLs" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="oBA-Rd-s3t"/>
+                <constraint firstItem="04Y-PW-hZE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="pSc-iG-l7z"/>
+                <constraint firstAttribute="trailing" secondItem="04Y-PW-hZE" secondAttribute="trailing" id="sgq-Yi-oYo"/>
+                <constraint firstItem="0BT-Qk-V30" firstAttribute="width" secondItem="tN7-a6-gLs" secondAttribute="width" id="wwf-yx-iXG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addNewBtn" destination="UVa-Ii-aaa" id="mS3-sP-afj"/>
+                <outlet property="searchBtn" destination="tN7-a6-gLs" id="gHf-FZ-tDZ"/>
+                <outlet property="tagBtn" destination="0BT-Qk-V30" id="ZB7-k1-AJ7"/>
+            </connections>
+            <point key="canvasLocation" x="341" y="328"/>
+        </view>
+    </objects>
+</document>

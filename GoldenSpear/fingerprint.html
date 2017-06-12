@@ -1,0 +1,11 @@
+<html>
+<script src="fingerprint_script.js"></script>
+<body>
+</body>
+	<script>
+		var my_hasher = murmurHash3.x64.hash128;
+		var fp = new Fingerprint({ canvas: true, ie_activex: true, screen_resolution: true, hasher: my_hasher });
+		var thisFingerprint = fp.get();
+        document.body.innerHTML = thisFingerprint;
+	</script>
+</html>

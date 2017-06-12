@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GSTaggableView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tapGestureRecognizer id="raq-hD-X9u" userLabel="TagContainerGestureRecognizer">
+            <connections>
+                <action selector="tagContainerTapped:" destination="iN0-l3-epB" id="mYY-Gc-EIB"/>
+                <outlet property="delegate" destination="iN0-l3-epB" id="U1h-Lx-gzo"/>
+            </connections>
+        </tapGestureRecognizer>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GSImageTaggableView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejS-pc-B2x">
+                    <rect key="frame" x="5" y="510" width="40" height="40"/>
+                    <state key="normal" image="mute_icon.png"/>
+                    <state key="selected" image="unmute_icon.png"/>
+                    <connections>
+                        <action selector="audioPushed:" destination="iN0-l3-epB" eventType="touchUpInside" id="3xJ-ag-x6U"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ksK-3O-4Rc" userLabel="BackgroundContainer">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gC7-g5-mdR">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f3R-mq-AZs">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="gC7-g5-mdR" firstAttribute="centerY" secondItem="ksK-3O-4Rc" secondAttribute="centerY" id="1FC-AK-QKc"/>
+                        <constraint firstItem="f3R-mq-AZs" firstAttribute="top" secondItem="ksK-3O-4Rc" secondAttribute="top" id="4q7-5z-88d"/>
+                        <constraint firstItem="gC7-g5-mdR" firstAttribute="width" secondItem="ksK-3O-4Rc" secondAttribute="width" id="MEe-Pk-BNP"/>
+                        <constraint firstAttribute="bottom" secondItem="f3R-mq-AZs" secondAttribute="bottom" id="PWg-2Z-pEA"/>
+                        <constraint firstAttribute="trailing" secondItem="f3R-mq-AZs" secondAttribute="trailing" id="RbV-rY-48j"/>
+                        <constraint firstItem="f3R-mq-AZs" firstAttribute="leading" secondItem="ksK-3O-4Rc" secondAttribute="leading" id="aOG-hc-Icv"/>
+                        <constraint firstItem="gC7-g5-mdR" firstAttribute="centerX" secondItem="ksK-3O-4Rc" secondAttribute="centerX" id="qiF-iU-FYm"/>
+                        <constraint firstItem="gC7-g5-mdR" firstAttribute="height" secondItem="ksK-3O-4Rc" secondAttribute="height" id="tCy-kr-FKT"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36l-IC-3nU">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FUe-eB-git" userLabel="TagContainer">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gys-q4-tPR">
+                                    <rect key="frame" x="10" y="560" width="580" height="30"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.69614361702127658" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="7XD-Sa-xj6"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Gys-q4-tPR" secondAttribute="bottom" constant="10" id="AEe-K0-btN"/>
+                                <constraint firstItem="Gys-q4-tPR" firstAttribute="leading" secondItem="FUe-eB-git" secondAttribute="leading" constant="10" id="Gwt-7Y-6Je"/>
+                                <constraint firstAttribute="trailing" secondItem="Gys-q4-tPR" secondAttribute="trailing" constant="10" id="t31-Gz-ayC"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="FUe-eB-git" firstAttribute="centerY" secondItem="36l-IC-3nU" secondAttribute="centerY" id="HYl-vz-AgX"/>
+                        <constraint firstItem="FUe-eB-git" firstAttribute="centerX" secondItem="36l-IC-3nU" secondAttribute="centerX" id="shn-F3-lbp"/>
+                        <constraint firstItem="FUe-eB-git" firstAttribute="height" secondItem="36l-IC-3nU" secondAttribute="height" id="txl-Uv-MMG"/>
+                        <constraint firstItem="FUe-eB-git" firstAttribute="width" secondItem="36l-IC-3nU" secondAttribute="width" id="v8M-gi-KZe"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="raq-hD-X9u" appends="YES" id="47c-o9-dVG"/>
+                        <outletCollection property="gestureRecognizers" destination="AcA-8y-dP4" appends="YES" id="wbc-hy-6Jh"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="36l-IC-3nU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2Oe-yc-Lh0"/>
+                <constraint firstItem="ksK-3O-4Rc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2hE-rt-rUi"/>
+                <constraint firstAttribute="trailing" secondItem="ksK-3O-4Rc" secondAttribute="trailing" id="3Dn-H7-ah1"/>
+                <constraint firstItem="ksK-3O-4Rc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8Bn-7U-Ebp"/>
+                <constraint firstItem="36l-IC-3nU" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="I9T-N8-jsG"/>
+                <constraint firstAttribute="bottom" secondItem="ejS-pc-B2x" secondAttribute="bottom" constant="50" id="exD-ut-QOA"/>
+                <constraint firstAttribute="bottom" secondItem="ksK-3O-4Rc" secondAttribute="bottom" id="jAv-fG-sXv"/>
+                <constraint firstItem="ejS-pc-B2x" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="m7t-X5-Zze"/>
+                <constraint firstItem="36l-IC-3nU" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qZi-eF-bhn"/>
+                <constraint firstItem="36l-IC-3nU" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="tmv-Lw-H0U"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="audioButton" destination="ejS-pc-B2x" id="BE0-IH-HpL"/>
+                <outlet property="backgroundContainer" destination="ksK-3O-4Rc" id="zDY-cg-HGG"/>
+                <outlet property="imageView" destination="f3R-mq-AZs" id="iDG-Yc-J1E"/>
+                <outlet property="tagContainer" destination="FUe-eB-git" id="CpX-y9-12w"/>
+                <outlet property="tagListContainer" destination="Gys-q4-tPR" id="cZY-f4-FN8"/>
+                <outlet property="videoContainerView" destination="gC7-g5-mdR" id="saP-ln-uf0"/>
+            </connections>
+        </view>
+        <pinchGestureRecognizer id="AcA-8y-dP4">
+            <connections>
+                <action selector="imagePinched:" destination="iN0-l3-epB" id="Ib1-yy-mtk"/>
+                <outlet property="delegate" destination="iN0-l3-epB" id="YBD-vl-uCZ"/>
+            </connections>
+        </pinchGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="mute_icon.png" width="40" height="40"/>
+        <image name="unmute_icon.png" width="40" height="40"/>
+    </resources>
+</document>

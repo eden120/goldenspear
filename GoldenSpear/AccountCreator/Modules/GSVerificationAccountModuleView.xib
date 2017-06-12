@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="GSVerificationAccountModuleView">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BECOME VERIFIED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsH-A4-qnl">
+                    <rect key="frame" x="20" y="15" width="134" height="21"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VERIFIED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erd-BI-Pjj">
+                    <rect key="frame" x="54" y="15" width="66" height="21"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_only.png" translatesAutoresizingMaskIntoConstraints="NO" id="iL0-gE-abr">
+                    <rect key="frame" x="162" y="5" width="79" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2WF-Jp-quc"/>
+                        <constraint firstAttribute="width" constant="79" id="B0e-hy-VSX"/>
+                        <constraint firstAttribute="width" secondItem="iL0-gE-abr" secondAttribute="height" multiplier="438:221" id="eNa-9q-AqC"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="eNa-9q-AqC"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vb1-S6-sQQ">
+                    <rect key="frame" x="352" y="11" width="28" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vb1-S6-sQQ" secondAttribute="height" multiplier="28:29" id="il8-SA-AwN"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="unchecked_box.png"/>
+                    <state key="selected" backgroundImage="checked_box.png"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="il8-SA-AwN"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="verifyPushed:" destination="iN0-l3-epB" eventType="touchUpInside" id="d3z-y0-wVI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UsH-A4-qnl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="2UY-lV-Mvf"/>
+                <constraint firstItem="erd-BI-Pjj" firstAttribute="centerX" secondItem="UsH-A4-qnl" secondAttribute="centerX" id="9t4-yn-zMI"/>
+                <constraint firstAttribute="trailing" secondItem="vb1-S6-sQQ" secondAttribute="trailing" constant="20" id="FNt-pD-VkA"/>
+                <constraint firstItem="iL0-gE-abr" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" constant="-10" id="Ilu-3I-bnX"/>
+                <constraint firstItem="vb1-S6-sQQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="KLk-JY-4bB"/>
+                <constraint firstItem="vb1-S6-sQQ" firstAttribute="height" secondItem="iL0-gE-abr" secondAttribute="height" id="Xdn-VY-d7U"/>
+                <constraint firstItem="vb1-S6-sQQ" firstAttribute="centerY" secondItem="iL0-gE-abr" secondAttribute="centerY" id="cd8-GJ-DtC"/>
+                <constraint firstItem="iL0-gE-abr" firstAttribute="leading" secondItem="UsH-A4-qnl" secondAttribute="trailing" constant="8" id="duM-MN-Yye"/>
+                <constraint firstItem="iL0-gE-abr" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="eQc-4Z-3ZS"/>
+                <constraint firstItem="UsH-A4-qnl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="k2C-Lb-HFL"/>
+                <constraint firstItem="iL0-gE-abr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="mGR-Gn-p44"/>
+                <constraint firstItem="erd-BI-Pjj" firstAttribute="centerY" secondItem="UsH-A4-qnl" secondAttribute="centerY" id="n1L-vu-xQz"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Ilu-3I-bnX"/>
+                    <exclude reference="eQc-4Z-3ZS"/>
+                    <exclude reference="Xdn-VY-d7U"/>
+                    <exclude reference="cd8-GJ-DtC"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="becomeLabel" destination="UsH-A4-qnl" id="T3U-Xk-hdz"/>
+                <outlet property="verificationBox" destination="vb1-S6-sQQ" id="Bzq-Kd-kzG"/>
+                <outlet property="verifiedLabel" destination="erd-BI-Pjj" id="LUZ-8H-qMi"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="135"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logo_only.png" width="438" height="221"/>
+        <image name="checked_box.png" width="28" height="29"/>
+        <image name="unchecked_box.png" width="28" height="29"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GSTaggableView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tapGestureRecognizer id="raq-hD-X9u" userLabel="TagContainerGestureRecognizer">
+            <connections>
+                <action selector="tagContainerTapped:" destination="-1" id="en9-Ne-QM9"/>
+                <outlet property="delegate" destination="iN0-l3-epB" id="LW8-EC-SFX"/>
+            </connections>
+        </tapGestureRecognizer>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GSTaggableView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ksK-3O-4Rc" userLabel="BackgroundContainer">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FUe-eB-git" userLabel="TagContainer">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rx2-Up-LPX">
+                            <rect key="frame" x="0.0" y="570" width="600" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="ZSz-Ow-6wR"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="rx2-Up-LPX" secondAttribute="trailing" id="2mn-3M-eKv"/>
+                        <constraint firstItem="rx2-Up-LPX" firstAttribute="leading" secondItem="FUe-eB-git" secondAttribute="leading" id="Iv0-KQ-Yh5"/>
+                        <constraint firstAttribute="bottom" secondItem="rx2-Up-LPX" secondAttribute="bottom" id="T1w-Tk-Xfo"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="raq-hD-X9u" appends="YES" id="kMm-2F-Ely"/>
+                        <outletCollection property="gestureRecognizers" destination="jos-rj-QNH" appends="YES" id="M2r-Mg-MKa"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ksK-3O-4Rc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2hE-rt-rUi"/>
+                <constraint firstAttribute="trailing" secondItem="ksK-3O-4Rc" secondAttribute="trailing" id="3Dn-H7-ah1"/>
+                <constraint firstItem="ksK-3O-4Rc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8Bn-7U-Ebp"/>
+                <constraint firstItem="FUe-eB-git" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JHz-H1-dqF"/>
+                <constraint firstAttribute="bottom" secondItem="FUe-eB-git" secondAttribute="bottom" id="NZF-Py-sXn"/>
+                <constraint firstAttribute="trailing" secondItem="FUe-eB-git" secondAttribute="trailing" id="SzG-en-VFB"/>
+                <constraint firstItem="FUe-eB-git" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="f6H-YY-s2G"/>
+                <constraint firstAttribute="bottom" secondItem="ksK-3O-4Rc" secondAttribute="bottom" id="jAv-fG-sXv"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="backgroundContainer" destination="ksK-3O-4Rc" id="zDY-cg-HGG"/>
+                <outlet property="tagContainer" destination="FUe-eB-git" id="CpX-y9-12w"/>
+                <outlet property="tagListContainer" destination="rx2-Up-LPX" id="Yz7-Gy-nld"/>
+            </connections>
+        </view>
+        <pinchGestureRecognizer id="jos-rj-QNH">
+            <connections>
+                <action selector="imagePinched:" destination="-1" id="XOi-lE-tuh"/>
+                <outlet property="delegate" destination="iN0-l3-epB" id="mAs-xV-Voi"/>
+            </connections>
+        </pinchGestureRecognizer>
+    </objects>
+</document>

@@ -1,0 +1,861 @@
+/* 
+  Localizable.strings
+  GoldenSpear
+
+  Created by Jose Antonio Sanchez Martinez on 16/04/15.
+  Copyright (c) 2015 GoldenSpear. All rights reserved.
+*/
+
+// General strings
+
+"_YES_" = "Yes";
+"_NO_" = "No";
+"_OK_" = "OK";
+"_CANCEL_" = "Cancel";
+"_ADD_" = "Add";
+"_SAVE_" = "Save";
+"_CLOSE_" = "Close";
+"_ACCEPT_" = "Accept";
+"_SEND_" = "Send";
+"_NEXT_" = "Next";
+
+"_INFO_" = "Information";
+"_ERROR_" = "Error";
+"_RETRY_" = "Retry";
+"_AREYOUSURE_" = "Are you sure?";
+//"_CONNECTION_ERROR_MSG_" = "Couldn't connect to GoldenSpear database";
+"_CONNECTION_ERROR_MSG_" = "\nYou don't have access to GoldenSpear database\n\nPlease check your internet connection";
+"_CONNECTION_ERROR_MSG_RETRY_" = "\nYou don't have access to GoldenSpear database\n\nDo you wish to retry sending the data?";
+"_CHECK_CONNECTION_" = "Please check your internet connection";
+"_COULDNOTPERFORMACTION_MSG_" = "Couldn't perform action";
+
+"_SPLASH_MESSAGE_" = "Initializing Artificial Intelligence Engine";
+
+"_MUSTBELOGGED_MSG_" = "You must sign in to use this feature";
+"_NOTYETIMPLMENETED_MSG_" = "This feature is not yet implemented... will soon be ready!";
+//"_NOTYETIMPLMENETED_MSG_" = "Coming soon!";
+
+// Common interface text
+
+"_MENUSECTION_0_" = "DIRECTORY";
+"_MENUSECTION_1_" = "";
+"_MENUSECTION_2_" = "SETTINGS";
+
+"_MENUENTRY_0_" = "Notices";
+"_MENUENTRY_1_" = "Tagged History";
+"_MENUENTRY_2_" = "Friends";
+"_MENUENTRY_3_" = "Likes";
+"_MENUENTRY_4_" = "Sale";
+"_MENUENTRY_5_" = "My History";
+"_MENUENTRY_6_" = "My Wardrobe";
+"_MENUENTRY_7_" = "My Profile";
+"_MENUENTRY_8_" = "Edit Account";
+"_MENUENTRY_9_" = "Link Accounts";
+"_MENUENTRY_10_" = "Change Password";
+"_MENUENTRY_11_" = "Help & Support";
+
+"_MENUENTRY_50A_" = "Sign Out";
+"_MENUENTRY_50B_" = "Sign In";
+
+/*
+"_VCTITLE_0_" = "Search";
+"_VCTITLE_1_" = "Trending";
+"_VCTITLE_2_" = "Brands";
+"_VCTITLE_3_" = "Profiles";
+"_VCTITLE_4_" = "Looks";
+"_VCTITLE_5_" = "Notices";
+"_VCTITLE_6_" = "My Wardrobe";
+"_VCTITLE_7_" = "Sale";
+"_VCTITLE_8_" = "Likes";
+"_VCTITLE_9_" = "Tagged History";
+"_VCTITLE_10_" = "My Profile";
+"_VCTITLE_11_" = "Edit Account";
+"_VCTITLE_12_" = "Change Password";
+"_VCTITLE_13_" = "Link Accounts";
+"_VCTITLE_14_" = "Friends";
+"_VCTITLE_15_" = "Help & Support";
+*/
+"_VCTITLE_0_" = "Notices";
+"_VCTITLE_1_" = "Tagged History";
+"_VCTITLE_2_" = "Friends";
+"_VCTITLE_3_" = "Likes";
+"_VCTITLE_4_" = "Sale";
+"_VCTITLE_5_" = "My History";
+"_VCTITLE_6_" = "My Wardrobe";
+"_VCTITLE_7_" = "My Profile";
+"_VCTITLE_8_" = "Edit Account";
+"_VCTITLE_9_" = "Link Accounts";
+"_VCTITLE_10_" = "Change Password";
+"_VCTITLE_11_" = "Help & Support";
+
+"_VCTITLE_8_V_" = "Invite Friends";
+
+"_VCTITLE_20_" = "Instructions";
+"_VCTITLE_21_" = "Search Filters";
+"_VCTITLE_22_" = "Search";
+"_VCTITLE_23_" = "Product Details";
+"_VCTITLE_25_" = "Edit Profile";
+"_VCTITLE_26_" = "Wardrobe Content";
+"_VCTITLE_27_" = "Add Item to Wardrobe";
+"_VCTITLE_28_" = "Product Feature Search";
+"_VCTITLE_30_" = "Page";
+"_VCTITLE_31_" = "Post a Look";
+
+"_VCTITLE_33_" = "Create Post in Page";
+
+"_VCTITLE_35_" = "Get the look";
+"_VCTITLE_36_" = "Sign Up";
+"_VCTITLE_37_" = "";
+"_VCTITLE_38_" = "Analytics";
+
+"_VCTITLE_39_" = "Who Are You?";
+"_VCTITLE_44_" = "LIVE";
+"_VCTITLE_50_" = "Sign In";
+"_VCTITLE_51_" = "Sign In";
+
+"_VCTITLE_101_" = "NEWSFEED";
+"_VCTITLE_104_" = "DISCOVER";
+"_VCTITLE_105_" = "SEARCH";
+"_VCTITLE_111_" = "SPEAR THE PIC";
+
+"_VCTITLE_201_" = "Add Comment";
+"_VCTITLE_205_" = "INFO";
+"_VCTITLE_207_" = "Post Comments";
+
+"_VCTITLE_3100_" = "Create Post";
+
+"_VCSUBTITLE_0_" = "";
+"_VCSUBTITLE_1_" = "";
+"_VCSUBTITLE_2_" = "";
+"_VCSUBTITLE_3_" = "";
+"_VCSUBTITLE_4_" = "";
+"_VCSUBTITLE_5_" = "";
+"_VCSUBTITLE_6_" = "";
+"_VCSUBTITLE_7_" = "";
+"_VCSUBTITLE_8_" = "";
+"_VCSUBTITLE_9_" = "";
+"_VCSUBTITLE_10_" = "";
+
+"_VCSUBTITLE_20_" = "";
+"_VCSUBTITLE_21_" = "";
+"_VCSUBTITLE_22_" = "";
+"_VCSUBTITLE_23_" = "";
+"_VCSUBTITLE_24_" = "";
+"_VCSUBTITLE_25_" = "";
+"_VCSUBTITLE_26_" = "";
+"_VCSUBTITLE_27_" = "";
+"_VCSUBTITLE_28_" = "";
+"_VCSUBTITLE_11_" = "";
+"_VCSUBTITLE_30_" = "";
+"_VCSUBTITLE_31_" = "";
+
+"_VCSUBTITLE_33_" = "";
+
+"_VCSUBTITLE_35_" = "";
+"_VCSUBTITLE_36_" = "";
+"_VCSUBTITLE_37_" = "";
+"_VCSUBTITLE_38_" = "";
+"_VCSUBTITLE_39_" = "";
+"_VCSUBTITLE_41_" = "";
+"_VCSUBTITLE_44_" = "";
+
+"_GET_THE_LOOK_FOR_PRODUCT_" = "With %@";
+
+"_VCSUBTITLE_50_" = "";
+"_VCSUBTITLE_51_" = "Forgot Password";
+
+"_VCSUBTITLE_101_" = "";
+"_VCSUBTITLE_104_" = "";
+"_VCSUBTITLE_105_" = "";
+"_VCSUBTITLE_111_" = "";
+
+"_VCSUBTITLE_201_" = "";
+"_VCSUBTITLE_205_" = "";
+"_VCSUBTITLE_207_" = "";
+
+"_VCTITLE_3100_" = "Create Post";
+"_VCTITLE_1004_" = "Looks";
+
+
+
+"_MEN_"= "Men";
+"_WOMEN_"= "Women";
+"_KIDS_"= "Kids";
+"_BOYS_"= "Boys";
+"_GIRLS_"= "Girls";
+
+"_MENU_BTN_" = "Menu";
+"_HINT_BTN_" = "?";
+"_FEATURESSEARCH_BTN_" = "Features";
+"_HIDE_BTN_" = "Hide";
+"_OK_BTN_" = "OK";
+
+"_INITIAL_SLIDE_LBL_" = "Slide to continue to the App";
+"_SLIDEBACK_LBL_" = "Slide right to go back";
+"_SLIDEFORWARD_LBL_" = "Slide left to go forward";
+"_SLIDEBACKANDFORWARD_LBL_" = "Slide right to go back, left to go forward";
+
+"_SHOWADVANCED_MSG_LBL_" = "Slide up to show Filters Search";
+"_HIDEADVANCED_MSG_LBL_" = "Slide down to hide Filters Search";
+
+"_SHARE_BTN_" = "Share";
+"_HOME_BTN_" = "Home";
+"_SEARCH_BTN_" = "Search";
+"_ADD_KW_BTN_" = "Term";
+"_SUBMIT_BTN_" = "Submit";
+"_CONTINUE_BTN_" = "Continue";
+"_FINISH_BTN_" = "Finish";
+"_SAVEVIEW_BTN_" = "Save&View";
+"_EDIT_BTN_" = "Edit";
+"_PUBLISH_BTN_" = "Publish";
+"_BACK_BTN_" = "Back";
+
+"_CANCEL_BTN_" = "Cancel";
+
+"_DONE_BTN_" = "Done";
+
+"_RESET_BTN_" = "Reset";
+"_RESTART_BTN_" = "Restart";
+"_FILTER_BTN_" = "Filter";
+"_ADDTERM_BTN_" = "Add";
+"_REPORT_BTN_" = "Report";
+"_ADDSEARCHTERM_BTN_" = "Add Search Term";
+"_CLEARTERMS_BTN_" = "Clear";
+"_STOPFOLLOW_BTN_" = "UnFollow";
+"_NOTIFICATIONS_BTN_" = "Turn Notifications On/Off";
+
+"_ZOOM_" = "Zoom In";
+"_EXPAND_" = "- SEE STYLES -";
+"_COLLAPSE_" = "- HIDE STYLES -";
+
+"_PULL_TO_REFRESH" = "Pull to refresh";
+
+"_SELECT_COUNTRY_" = "Please first select a country";
+"_SELECT_COUNTRY_STATE_" = "Please select a country and state/region";
+
+// Circle Menu View Labels
+
+"SocialShareButtonBottomLbl" = "Social Media";
+"StylistPostButtonBottomLbl" = "Post a Look";
+"SimilarLbl" = "Find Similar";
+"VisualSearchLbl" = "Visual Search";
+"FeaturesBottomLbl" = "Product Features";
+"GetTheLookBottomLbl" = "Get the look";
+"AddTermButtonBottomLbl" = "Write term";
+"FiltersBottomLbl" = "Select Filters";
+
+// Activity messages
+
+"_LOGIN_ACTV_MSG_" = "Log in...";
+"_SIGNUP_ACTV_MSG_" = "Signing up...";
+"_UPDATING_USER_ACTV_MSG_" = "Updating...";
+"_RETRIEVINGPWD_USER_ACTV_MSG_" = "Sending request...";
+"_SEARCHING_ACTV_MSG_" = "Searching...";
+"_DOWNLOADING_ACTV_MSG_" = "Preparing results...";
+"_DOWNLOADINGCONTENT_ACTV_MSG_" = "Preparing information...";
+"_DOWNLOADINGFILTERS_ACTV_MSG_" = "Setting up filters...";
+"_UPLOADINGREVIEW_ACTV_MSG_" = "Posting your review...";
+"_CAPTURING_ACTV_MSG_" = "Capturing...";
+"_UPLOADINGIMG_ACTV_MSG_" = "Analyzing...";
+"_IDENTIFYING_ACTV_MSG" = "Setting up features identification...";
+"_PREPARING_ACTV_MSG_" = "Preparing content...";
+"_UPLOADING_TERM_MSG_" = "Adding keyword...";
+"_UPLOADINGUSERREPORT_ACTV_MSG_" = "Reporting offensive user...";
+"_UPLOADINGPOSTCOMENTREPORT_ACTV_MSG_" = "Reporting innapropriate post comment...";
+"_UPLOADINGPOSTCONTENTREPORT_ACTV_MSG_" = "Reporting innapropriate post content...";
+"_UPLOADINGPRODUCTREPORT_ACTV_MSG_" = "Reporting bad product...";
+"_UPLOADINGCOMMENT_ACTV_MSG_" = "Posting your comment...";
+"_SETTING_SUGGESTIONS_" = "Setting up intelligent filters...";
+"_LOADING_STATES_CITIES_" = "Loading states and cities...";
+"_LOADING_CITIES_" = "Loading cities...";
+"_LOADING_COUNTRIES_" = "Loading countries...";
+
+// User Sing Up form
+
+"_NAME_" = "Name";
+"_SURNAME_" = "Surname";
+"_EMAIL_" = "eMail";
+"_PASSWORD_1_" = "Password";
+"_PASSWORD_2_" = "Repeat password";
+"_PHONE_NUMBER_" = "Phone number";
+"_BIRTHDATE_" = "Birthdate";
+"_ESTABLISHEDDATE_" = "Established date";
+"_ERROR_03_00_" = "The e-mail already exists";
+"_ERROR_03_01_" = "The e-mail was not found";
+"_ERROR_03_02_" = "The username already exists";
+"_ERROR_04_00_" = "Wrong password";
+"_ERROR_LOGIN_" = "The e-mail or password are incorrect";
+"_ERROR_04_01_" = "Time excedded\nGet another code to retrieve your password";
+"_ERROR_04_02_" = "Wrong code";
+
+"_PLEASE_FILL_MANDATORY_FIELDS_" = "Please fill all fields marked with *";
+"_USERNAME_MIN_CHAR" = "Username must have at least %d characters";
+"_PASSWORD_MIN_CHAR" = "Password must have at least %d characters";
+"_PASSWORDS_MISMATCH" = "Passwords mismatch";
+"_OLD_PASSWORD_MISMATCH" = "Your old password is not correct. Try again please";
+"_ENTER_VALID_EMAIL_" = "Enter valid email";
+"_ENTER_VALID_PHONE_" = "Enter valid phone number";
+"_INCORRECT_LOCATION" = "Location is not correct";
+"_ENTER_VALID_USERNAME_" = "Username can't contain white spaces";
+"_SELECT_PROFESSION_" = "Select a profession related with fashion";
+
+"_GENDER_" = "Gender";
+"_SELECT_GENDER_" = "Select gender";
+"_MALE_" = "Male";
+"_FEMALE_" = "Female";
+"_COMPLICATED_" = "It's complicated";
+"_PREFER_NO_SAY_" = "Prefer not to say";
+//tag
+"_TAG_USER_NOT_FOUND_" = "Now, we can't link the user.";
+"_POST_SUCCESS_" = "Tagging upload successfully!";
+
+"_ENTER_GENDER_AND_BIRTHDATE_" = "\nCompleting Gender and Birthdate enables a customized search experience"; //"\nFor an enhanced and tailored search experience, we recommend you to fill also your Gender and Birthdate.\n\n Wouldn't you prefer to complete the form?";
+"_ENTER_GENDER_" = "\nCompleting Gender enables a customized search experience"; //"\nFor an enhanced and tailored search experience, we recommend you to fill also your Gender.\n\n Wouldn't you prefer to complete the form?";
+"_ENTER_BIRTHDATE_" = "\nCompleting Birthdate enables a customized search experience"; //"\nFor an enhanced and tailored search experience, we recommend you to fill also your Birthdate.\n\n Wouldn't you prefer to complete the form?";
+"_COMPLETE_FORM_" = "Go back and complete";
+"_CONTINUE_" = "Continue";
+"_NEXT_TAG_CONFIRM_" = "Would you like to draw next bounding box?";
+// Sign Up dialogs
+
+"_SIGN_UP_" = "Sign Up";
+"_CORRECT_SIGNUP_MSG_" = "You signed up correctly";
+"_CORRECT_UPDATE_ACCOUNT_MSG_" = "You updated correctly";
+"_SIGN_UP_RQS_ERROR_MSG_" = "Couldn't create Sign Up request";
+"_USR_REGISTERED_ERROR_MSG_" = "User email is already registered";
+"_SAVE_USR_DFLTS_ERROR_MSG_" = "Couldn't save user information";
+"_EDIT_PROFILE_" = "Edit Profile";
+"_SIGN_UP_ERROR_IMG_" = "You signed up correctly, but an error ocurred uploading your avatar. Please visit the \"Account\Edit profile\" section to retry.";
+"_UPDATE_ACCOUNT_ERROR_MSG_" = "Update not possible";
+"_UPDATE_ACCOUNT_" = "Update";
+
+// Sign In dialogs
+
+"_SIGN_IN_" = "Sign In";
+"_SIGN_IN_INSTR_MSG_" = "Please enter Username and Password";
+"_USERNAME_" = "Username (eMail)";
+"_PWD_" = "Password";
+"_LOG_IN_" = "Log In";
+"_CORRECT_SIGN_IN_MSG_" = "You signed in correctly";
+"_LOG_IN_RQS_ERROR_MSG_" = "Couldn't create Log In request";
+"_LOG_IN_ERROR_MSG_" = "Your username was not found.\nPlease Sign Up as a new user";
+"_INCORRECT_EMAIL_FORMAT_" = "Incorrect email format";
+
+// Sign Out dialogs
+
+"_SIGN_OUT_" = "Sign Out";
+"_SIGN_OUT_INSTR_MSG_" = "Are you sure to sign out?";
+
+// Forgot dialog
+"_RETRIEVEPWD_" = "Retrieve password";
+"_FORGOTPWD_MESSAGE_SENT_" = "A message with your new password has been sent to your e-mail, you will soon receive it.\nPlease check you spam folder.";
+"_FORGOTPWD_ERROR_" = "Your email was not found";
+"_FORGOTPWD_ERROR_QUERY_" = "Couldn't create Request Password request";
+"_LBL_EXPLANATION_AGAIN_FORGOT_PWD_" = "A code has been resent to your email. Please fill the next fields with that code and the new pasword.\nCheck your spam folder if you don't find the email.";
+"_LBL_EXPLANATION_FORGOT_PWD_" = "A code has been sent to your email. Please fill the next fields with that code and the new pasword.\nCheck your spam folder if you don't find the email.";
+
+// Search dialogs
+"_NO_SEARCH_KEYWORDS_" = "No search keywords";
+"_NO_SEARCH_KEYWORDS_MSG_" = "";//"Add some keyword to search";
+"_NO_FOLLOWERSORFOLLOWING_ERROR_MSG_" = "Didn't find any user";
+"_NO_RESULTS_ERROR_MSG_" = "Results 0";//"Those search terms didn't match any element";
+"_NO_VISUALRESULTS_ERROR_MSG_" = "That pic didn't match any result";
+"_TAKE_PIC_" = "Take Pic";
+"_NO_RESULTS_ERROR_ALERT_MSG_" = "Those search terms didn't match any element";
+"_NO_GETTHELOOK_ERROR_MSG_" = "Didn't find any look matching that product";
+"_FUTURE_NO_RESULTS_ERROR_MSG_" = "Results 0";//"Those search terms won't match any element";
+"_FUTURE_NUM_RESULT_" = "Results %i";//"%i result would exactly match this search";
+"_FUTURE_NUM_RESULTS_" = "Results %i";//"%i results would exactly match this search";
+"_FUTURE_MORETHAN1000_RESULTS_" = "Results +1000";//"You will get +1000 results";
+"_NUM_RESULT_" = "Results %i";//"%i Result exactly matches your search";
+"_NUM_RESULTS_" = "Results %i";//"%i Results exactly match your search";
+"_MORETHAN1000_RESULTS_" = "Results +1000";//"+1000 Results";
+"_NOTSUCCESFULTERMS_" = "\"%@\" didn't provide any result";
+"_NO_CONTENTS_ERROR_MSG_" = "Couldn't get information";
+"_TERM_ALREADY_IN_LIST_MSG_" = "That term is already in the search list";
+"_DOWNLOADINGFILTERTERMS_LBL_" = "Composing suggested filters...";
+"_NOFILTERTERMS_LBL_" = "No more filters apply to current results";
+"_RESTARTSEARCH_" = "Restart Search";
+"_RESTARTSEARCH_MSG_" = "Are you sure to clear the current search and start a new one?";
+"_CANCELFILTERSEARCHANDGO_" = "Filter Search";
+"_CANCELFILTERSEARCH_" = "Filters Search";
+"_CANCELFILTERSEARCH_MSG_" = "Are you sure to discard the filters selection?";
+"_BACK_" = "Back";
+"_MUSTGENDERSELECTED_" = "Please select gender prior to a product category";
+"_NO_MAIN_SEARCH_RESULTS_" = "Your search terms didn't match any result... ";
+"_MAIN_SEARCH_RESULTS_" = "The following results match your search terms: ";
+"_BUT_ADDITIONAL_SEARCH_RESULTS_" = "Your search terms didn't match any result, but we suggest these items below";//"Your search terms didn't match any result, but\nby searching \"%@\"\nwe also suggest these items below";//"...but the following results match \"%@\": ";
+"_ADDITIONAL_SEARCH_RESULTS_" = "We also suggest these items below";//"By searching \"%@\"\nwe also suggest these items below";//"The following results match \"%@\": ";
+"_BUT_MORE_SEARCH_RESULTS_" = "We also suggest these items below";//"...but the following results match \"%@\": ";
+"_MORE_SEARCH_RESULTS_" = "We also suggest these items below";//"Searching by \"%@\" we suggest: ";
+"_BUT_REST_OF_SEARCH_RESULTS_" = "We also suggest these items below";//"...but the following results match \"%@\": ";
+"_REST_OF_SEARCH_RESULTS_" = "We also suggest these items below";//"Results for \"%@\" are: ";
+"_BUT_FINAL_SEARCH_RESULTS_" = "We also suggest these items below";//"...but the following results match \"%@\": ";
+"_FINAL_SEARCH_RESULTS_" = "We also suggest these items below";//"And for \"%@\": ";
+"_SEARCHTERMS_SEPARATOR_" = "%@,";
+"_SEARCHTERM_SEPARATOR_" = ","; // needed for remove the separator from string
+"_SUBSTYLE_HEADER_SECTION" = "%@ substyles";
+
+ // Brands Search
+"_NO_BRANDPRODUCTS_ERROR_MSG_" = "Couldn't find any product for this brand";
+"_NO_BRANDPRODUCTS_COMMING_SOON_MSG_" = "%@ will be soon available at GoldenSpear.";
+
+// Wardrobe
+"_VIEW_BTN_" = "View";
+"_MOVE_BTN_" = "Move";
+"_DELETE_BTN_" = "Delete";
+"_CREATE_BTN_" = "Create new";
+"_ADDHERE_BTN_" = "Add here";
+"_WARDROBETITLE_DEFAULT_TEXT_" = "Wardrobe Collection";
+"_NO_ITEMS_MSG_" = "There are no elements in this Wardrobe Collection";
+"_NO_WARDROBES_ERROR_MSG_" = "Didn't find any Wardrobe Collection";
+"_ADDWARDROBE_" = "Add Wardrobe Collection";
+"_ADDWARDROBE_MSG_" = "Set a name for your Wardrobe Collection";
+"_ADDWARDROBENAME_LBL_" = "Collection Name:";
+"_PREPARINGWARDROBE_MSG_" = "Preparing Collection...";
+"_UPDATINGWARDROBE_MSG_" = "Updating Collection...";
+"_DELETINGWARDROBE_MSG_" = "Deleting Collection...";
+"_NO_WARDROBECREATION_ERROR_MSG_" = "Couldn't create Wardrobe Collection";
+"_NO_WARDROBEDELETION_ERROR_MSG_" = "Couldn't delete Wardrobe Collection";
+"_SELECTWARDROBEFORITEM_MSG_" = "Select the Wardrobe Collection to store the item";
+"_CREATEWARDROBEFORITEM_MSG_" = "Create the Wardrobe Collection to store the item";
+"_ADDINGITEMTOWARDROBE_MSG_" = "Adding item to Wardrobe Collection...";
+"_REMOVINGITEMFROMWARDROBE_MSG_" = "Removing items from Wardrobe Collection...";
+"_NO_ITEMINSERTIONINWARDROBE_ERROR_MSG_" = "Couldn't add item to wardrobe";
+"_ITEMSUCCESSFULLYADDEDTOWARDROBE_MSG_" = "The item was added to your wardrobe";
+"_ITEMSUCCESSFULLYMOVEDTOWARDROBE_MSG_" = "The item was moved to your wardrobe";
+"_MUSTSELECTWARDROBE_MSG_" = "Select a Wardrobe Collection to store the item";
+"_ADDITIONTOWARDROBECANCELLED_MSG_" = "Addition of item to Wardrobe was cancelled";
+"_ADDTOWARDROBE_BTN_" = "Add to Wardrobe";
+"_AUTHOR_AND_TITLE_" = "%@\n%@";
+"_REMOVEITEMS_" = "Remove Items";
+"_REMOVEITEMSFROMWARDROBE_MSG_" = "Are you sure to remove those items from this Wardrobe Collection?";
+"_REMOVEITEMSFROMWARDROBEBIN_MSG_" = "Are you sure to remove those items from your Wardrobe Bin?";
+"_NO_ITEMREMOVALFROMWARDROBE_ERROR_MSG_" = "Couldn't remove item from wardrobe";
+"_REMOVEWARDROBE_" = "Remove Wardrobe Collection";
+"_REMOVEWARDROBE_MSG_" = "Are you sure to remove this Collection from your Wardrobe?";
+"_MUSTINDICATEITEM_MSG_" = "Must select an item to add";
+"_CREATEORSELECTWARDROBE_" = "Create or select a Wardrobe Collection\nto store this item";
+"_CREATEWARDROBE_" = "Create a Wardrobe Collection\nto store this item";
+"_CREATEORSELECTWARDROBEMOVING_" = "Create or select a Wardrobe Collection\nto move this item";
+"_CREATEWARDROBEMOVING_" = "Create a Wardrobe Collection\nto move this item";
+"_ADDTOWARDROBE_" = "ADD";
+"_MOVETOWARDROBE_" = "MOVE";
+"_ITEMALREADYINWARDROBE_MSG_" = "This item is already in that Collection";
+"_NUM_ITEMS_" = "%@ : %i elements";
+"_NUM_ITEM_" = "%@ : %i element";
+
+// Product Feature Search
+"_NO_TERMS_ERROR_MSG_" = "No terms were found for this product feature";
+"_SELECTTERMS_MSG_" = "Select the features you wan to search for";
+"_DOWNLOADINGFEATURES_ACTV_MSG_" = "Analyzing product features...";
+"_NO_FEATURES_ERROR_MSG_" = "Couldn't find any feature for this product";
+"_NO_GROUPFEATURES_ERROR_MSG_" = "Couldn't find any feature set for this kind of product";
+"_DOWNLOADINGPROPERTIES_ACTV_MSG_" = "Preparing feature properties...";
+"_NO_PROPERTIES_ERROR_MSG_" = "Couldn't find any property for this feature";
+
+// Sharing
+"_SHARE_GENERIC_MSG_" = "Hey! Look what I found in GoldenSpear!";
+"_SHARE_GENERIC_URL_" = "http://www.goldenspear.com";
+"_SHARE_POST_MSG_" = "Hey! Look at the post I found on GoldenSpear!";
+"_SHARE_POST_URL_" = "http://app.goldenspear.com/shareex/%@";
+"_SHARE_PRODUCT_MSG_" = "Hey! Look at the product I found on GoldenSpear!";
+"_SHARE_PRODUCT_URL_" = "http://app.goldenspear.com/shareex/%@";
+"_FACEBOOK_" = "Facebook";
+"_TWITTER_" = "Twitter";
+"_PINTEREST_" = "Others (Pinterest, Google+ ...)";
+"_INSTAGRAM_" = "Instagram";
+"_OTHER_" = "Other";
+"_SOCIALNETWORKNOTAVAILABLE_" = "This Social Network is not available.\nPlease set up an account for this Social Network on your device.";
+"_CANTSHAREIMAGE_" = "Couldn't setup image for sharing.";
+"_PREPAREDCAPTIONTOSHARE_" = "Click \"Paste\" in the text field for automatic caption.";
+
+//profile complete
+"_PROFILE_COMPLETE_ERROR_" = "ACCOUNT VERITY";
+"_PROFILE_COMPLETE_MSG" = "You must verify your account to see this. Please finish your sign up form.";
+"_PROFILE_ERROR_MSG" = "Please complete your account sign up to access added benefits and a better user experience.";
+"_PROFILE_CONFIRM_MSG_" = "You have not completed the required information. Saving now will not give you access to tools such as Wardrobe, Friends, Messaging and More.";
+"_COMPLETE_FIELDS_" = "Complete Fields";
+
+// Reviewing
+
+"_USR_LOC_" = "User location";
+"_PRODUCT_REVIEW_" = "Product Review";
+"_REVIEW_SUCCESSFULLY_UPLOADED_MSG_" = "Your review was succesfully registered. It'll be published soon.";
+"_NO_REVIEWCREATION_ERROR_MSG_" = "Couldn't post review";
+"_NO_REVIEWVIDEO_ERROR_MSG_" = "Couldn't upload review video";
+"_COULDNT_RETRIEVE_USERLOCATION_" = "";//"Location not available";
+"_WRITE_REVIEW_" = "Write a review";
+"_REMOVE_REVIEW_VIDEO_" = "Remove video";
+"_ADD_REVIEW_VIDEO_" = "Add video";
+
+
+// Support email
+
+"_SUPPORT_EMAIL_TITLE_" = "Support request";
+
+// Product Sheet
+
+"_PRODUCT_WEBSITE_" = "Product Website";
+"_WEBSITENOAVAILABLE_MSG_" = "Website not available";
+"_NEAREST_STORE_" = "Nearest Store";
+"_STORENOAVAILABLE_MSG_" = "Store not available";
+"_PRODUCT_REPORT_TYPE_0_" = "Bad images (small, blurry, etc.)";
+"_PRODUCT_REPORT_TYPE_1_" = "Bad price (none, or incorrect)";
+"_PRODUCT_REPORT_TYPE_2_" = "Bad description";
+"_PRODUCT_REPORT_TYPE_3_" = "Out of stock";
+"_PASTCOLLECTIONPRODUCT_" = "Past Collection";
+"_GOTO_BRAND_PAGE_" = "Go to brand website";
+"_PRICE_NOT_AVAILABLE_" = "Price Not Available";
+"_PRODUCTTAGS_" = "Product tags";
+
+// Visual Search
+
+"_IMAGENOTCAPTURED_MSG_" = "Image couldn't be captured";
+"_UPLOADINGIMG_RQS_ERROR_MSG_" = "Couldn't create identification request";
+"_COULDNTPROCESSIMAGE_MSG_" = "Couldn't process image";
+"_NOIDENTIFICATION_MSG_" = "Couldn't find matching product features.\nPlease try with a better product photo";
+"_SPEAR_THE_PIC_BTN_" = "Spear";
+"_CAMERAROLL_BTN_" = "Open Pic";
+"_SEARCH_PRODUCTS_" = "Find similar";
+"_SEARCH_LOOKS_" = "Get the look";
+
+// Search History
+"_NO_HISTORYITEMS_ERROR_MSG_" = "There are no elements in your Search History";
+"_HISTORYPERIOD_0" = "Today";
+"_HISTORYPERIOD_1" = "Last Week";
+"_HISTORYPERIOD_2" = "Last Month";
+"_HISTORYPERIOD_3" = "Last 6 Months";
+"_HISTORYPERIOD_4" = "Last Year";
+
+// Fashionista
+"_NO_FASHIONISTA_CONTENT_MSG_" = "You don't have access to GoldenSpear database\n\nPlease check your internet connection"; //"OOOOPS!\nThere is no content\nfor this post!";
+"_FASHIONISTAPOSTTYPE_0" = "All posts";
+"_FASHIONISTAPOSTTYPE_1" = "Articles";
+"_FASHIONISTAPOSTTYPE_2" = "Tutorials";
+"_FASHIONISTAPOSTTYPE_3" = "Reviews";
+"_FASHIONISTAPOSTTYPE_4" = "Wardrobes";
+"_FASHIONISTA_" = "Profile";
+"_APPLY_FASHIONISTA_" = "Now you are a GoldenSpear user";
+"_ERROR_APPLY_FASHIONISTA_" = "Error applying the GoldenSpear account";
+"_ERROR_GETTING_FASHIONISTA_PAGES_" = "An error has occuredd getting the pages of the user";
+"_ERROR_GETTING_FASHIONISTA_POSTS_" = "An error has occuredd getting the posts of the user";
+"_FASHIONISTA_PAGE_" = "Page";
+"_FASHIONISTA_PAGE_BY" = "Page by %@";
+"_REMOVEPAGE_" = "Remove Page";
+"_REMOVEPAGE_MSG_" = "Are you sure to remove this Page?";
+"_DELETINGPAGE_MSG_" = "Deleting Page...";
+"_NO_PAGEDELETION_ERROR_MSG_" = "Couldn't delete Page";
+"_UNKNOWN_LOCATION_AND_DATE_" = "Some time ago...";
+"_NO_COMMENTS_AND_LIKES_" = "Be the first to like and comment this";
+"_POSTLIKE_" = "%ld like";
+"_POSTLIKES_" = "%ld likes";
+"_POSTCOMMENT_" = "%ld comment";
+"_POSTCOMMENTS_" = "%ld comments";
+"_POSTLIKESANDCOMMENT_" = " and %ld comment";
+"_POSTLIKESANDCOMMENTS_" = " and %ld comments";
+"_POSTDATE_" = "Posted %@";
+"_POSTLOCATION_" = "Posted in %@";
+"_POSTDATEANDLOCATION_" = " in %@";
+"_POSTED_YEARS_AGO_" = "%ld years ago";
+"_POSTED_YEAR_AGO_" = "one year ago";
+"_POSTED_MONTHS_AGO_" = "%ld months ago";
+"_POSTED_MONTH_AGO_" = "one month ago";
+"_POSTED_WEEKS_AGO_" = "%ld weeks ago";
+"_POSTED_WEEK_AGO_" = "one week ago";
+"_POSTED_DAYS_AGO_" = "%ld days ago";
+"_POSTED_YESTERDAY_" = "yesterday";
+"_POSTED_HOURS_AGO_" = "%ld hours ago";
+"_POSTED_HOUR_AGO_" = "one hour ago";
+"_POSTED_MINUTES_AGO_" = "%ld minutes ago";
+"_POSTED_MINUTE_AGO_" = "one minute ago";
+"_POSTED_SECONDS_AGO_" = "%ld seconds ago";
+"_POSTED_RIGHTNOW_" = "right now";
+"_POSTANDBEVALIDATED_" = "Applied for a GoldenSpear account";
+"_FASHIONISTA_POSTS_" = "Looks";
+"_FASHIONISTAS_" = "Profiles";
+"_STYLISTFOLLOW_0" = "All Profiles";
+"_STYLISTFOLLOW_1" = "Following";
+//"_STYLISTFOLLOW_2" = "Followers";
+"_STYLISTFOLLOW_2" = "2nd level Following";
+"_POST_COMMENT_" = "Post Comment";
+"_POST_COMMENT_ADDSOMETEXT_MSG_" = "Please add some text to your comment";
+"_COMMENT_SUCCESSFULLY_UPLOADED_MSG_" = "Your comment was succesfully registered";
+"_NO_COMMENTCREATION_ERROR_MSG_" = "Couldn't upload comment";
+"_NO_COMMENTVIDEO_ERROR_MSG_" = "Couldn't upload comment video";
+"_WRITE_COMMENT_" = "Write a comment";
+"_REMOVE_COMMENT_VIDEO_" = "Remove video";
+"_ADD_COMMENT_VIDEO_" = "Add video";
+"_NO_LIKECREATION_ERROR_MSG_" = "Couldn't set 'Like'";
+"_UNLIKE_ERROR_MSG_" = "Couldn't unset 'Like'";
+"_LIKING_USER_MSG_" = "Setting 'Like'...";
+"_UNLIKING_USER_MSG_" = "Unsetting 'Like'...";
+"_STYLISTBIOFIELDPLACEHOLDER_" = "More info";
+"_USER_REPORT_TYPE_0_" = "Offensiveness or disrespect with my opinion";
+"_USER_REPORT_TYPE_1_" = "Harassment";
+"_USER_REPORT_TYPE_2_" = "Specific violent threats";
+"_USER_REPORT_TYPE_3_" = "Publication of private images or information ";
+"_USER_REPORT_TYPE_4_" = "Spamming";
+"_UNFOLLOWING_POST_MSG_" = "Unfollowing image...";
+"_NO_LIVESTREAMINGUPLOADPRIVACY_ERROR_MSG_" = "Couldn't set live streaming privacy";
+"_NO_LIVESTREAMINGUPLOAD_ERROR_MSG_" = "Couldn't upload live streaming";
+"_NO_LIVESTREAMINGETHNICITYUPLOAD_ERROR_MSG_" = "Couldn't upload live streaming ethnicity";
+"_NO_STREAMINGLINKCATEGORY_ERROR_MSG_" = "Couldn't add category to live streaming";
+
+  // Main Page Edition
+"_ADD_TITLE_" = "Tap to set a Title";
+"_ADD_IMAGESVIDEOTEXTANDTAG_" = "";//"Add and tag images, videos or text";
+"_POST_LOOK_" = "POST A LOOK";
+"_CAMEARA_MODE_" = "CAMERA MODE";
+"_VIDEO_MODE_" = "VIDEO MODE";
+"_SETPAGETITLE_" = "Set Title";
+"_SETPAGETITLE_MSG_" = "Set a title for your page";
+"_SETPAGETITLE_LBL_" = "Page Title";
+"_EDITPAGETITLE_" = "Edit Title";
+"_EDITPAGETITLE_MSG_" = "Change title of your page";
+"_EDITPAGETITLE_LBL_" = "New page title";
+"_ADD_HEADER_IMAGE_" = "Tap to set a header image";
+"_EDIT_HEADER_IMAGE_" = "Tap to edit the header image";
+"_SETPAGEURL_" = "Set URL";
+"_SETPAGEURL_MSG_" = "Set the URL of your blog";
+"_SETPAGEURL_LBL_" = "Your blog URL";
+"_EDITPAGEURL_" = "Edit URL";
+"_EDITPAGEURL_MSG_" = "Change the URL of your blog";
+"_EDITPAGEURL_LBL_" = "New blog URL";
+"_ADD_URL_" = "Tap to add your blog URL";
+"_CANCELPAGEDITING_" = "Page edition";
+"_CANCELPAGEDITING_MSG_" = "Are you sure to discard the page edition?";
+"_PREPARINGFASHIONISTAPAGE_MSG_" = "Preparing Page...";
+"_SHOULDSETBLOGURL_" = "Please set your blog's URL";
+"_SHOULDSETHEADERIMAGE_" = "Please set a header image";
+"_SHOULDSETPAGETITLE_" = "Please set a Page title";
+"_NO_CHANGESTOUPLOAD_MSG_" = "There are no changes to save";
+"_NO_FASHIONISTAPAGEUPLOAD_ERROR_MSG_" = "Couldn't upload Page";
+"_NO_FASHIONISTAPAGEHEADERIMAGEUPLOAD_ERROR_MSG_" = "Couldn't upload header image";
+"_FASHIONISTAPAGESUCCESSFULLYPOSTED_MSG_" = "Your Page is ready";
+"_EDIT_BTN_" = "Edit";
+"_REMOVEPOST_" = "Remove Post";
+"_REMOVEPOST_MSG_" = "Are you sure to remove this Post from your Page?";
+"_DELETINGPOST_MSG_" = "Deleting Post...";
+"_NO_POSTDELETION_ERROR_MSG_" = "Couldn't delete Post";
+ // Post Edition
+    //Post Categories
+"_GENERALFASHION_CAT_" = "General Fashion";
+"_MAKEUP_CAT_" = "Makeup";
+"_DEISGNERS_CAT_" = "Designer(s)";
+"_FOOTWEAR_CAT_" = "Footwear";
+"_SWINWEARANDCOVERUPS_CAT_" = "Swimwear & Coverups";
+"_MENSFASHION_CAT_" = "Men's Fashion";
+"_WOMENSFASHION_CAT_" = "Women's Fashion";
+"_KIDSFASHION_CAT_" = "Kids Fashion";
+"_COATS_CAT_" = "Coats";
+"_TOPS_CAT_" = "Tops";
+"_SWEATERS_CAT_" = "Sweaters";
+"_JACKETSANDVESTS_CAT_" = "Jackets & Vests";
+"_JEANS_CAT_" = "Jeans";
+"_PANTSANDSHORTS_CAT_" = "Pants & Shorts";
+"_SKIRTS_CAT_" = "Skirts";
+"_JUMPSUITSANDROMPERS_CAT_" = "Jumpsuits & Rompers";
+"_SUITSANDSEPERATES_CAT_" = "Suits & Seperates";
+"_LINGERIE_CAT_" = "Lingerie";
+"_LOUNGEANDSLEEPWEAR_CAT_" = "Lounge and Sleepwear";
+"_OTHERS_CAT_" = "Others";
+    // UI Messages
+"_SETPOSTTITLE_" = "Set Title";
+"_SETPOSTTITLE_MSG_" = "Set a title for your post";
+"_SETPOSTTITLE_LBL_" = "Post Title";
+"_EDITPOSTTITLE_" = "Edit Title";
+"_EDITPOSTTITLE_MSG_" = "Change title of your post";
+"_EDITPOSTTITLE_LBL_" = "New post title";
+"_ADDVIDEOTOPOST_BTN_" = " Add a video";//"Add a video of what's going on";
+"_ADDIMAGETOPOST_BTN_" = " Add an image";//"Add an image showing your style";
+"_ADDTEXTTOPOST_BTN_" = " Write a post";//"#Hashtag and write about your post";
+"_ADDANOTHERVIDEOTOPOST_BTN_" = " Add another video";
+"_ADDANOTHERIMAGETOPOST_BTN_" = " Add another image";
+"_ADDANOTHERTEXTTOPOST_BTN_" = " Write another post";//"Add more #hashtags or stories";
+"_ADDTAGSHERE_" = "Tag first product"; //"Optimize search setting features for first product";//"Describe the first product on this content";
+"_ADDMORETAGSHERE_" = "Tag next product"; //"Optimize search setting features for the next product";//"Describe the next product on this content";
+"_ADDGROUPTAGSHERE_" = "Add a group of tags";
+"_ADDPRODUCTSTOVIDEO_" = "Link products to this video";
+"_ADDPRODUCTSTOIMAGE_" = "Link products to this image";
+"_CANCELPOSTEDITING_" = "Post edition";
+"_CANCELPOSTEDITING_MSG_" = "Are you sure to discard the post edition?";
+"_CANCELPOSTEDITINGATTRANSITION_MSG_" = "Please finish or discard the post edition before leaving this screen.";
+"_CANCELLIVESTREAMINGATTRANSITION_MSG_" = "Please finish or discard live streaming before leaving this screen.";
+"_PREPARINGFASHIONISTAPOST_MSG_" = "Preparing Post...";
+"_SHOULDSETSOMECONTENT_" = "Please add some content to your post";
+"_SHOULDSETPOSTTITLE_" = "Please set a Post title";
+"_SHOULDSETSOMEPREVIEWIMAGE_" = "Please set a Post preview image";
+"_NO_FASHIONISTAPOSTUPLOAD_ERROR_MSG_" = "Couldn't upload Post";
+"_FASHIONISTAPOSTSUCCESSFULLYPOSTED_MSG_" = "Your Post is ready";
+"_NO_POSTCONTENTDELETION_ERROR_MSG_" = "Couldn't delete Content";
+"_EDIT_BTN_" = "Edit";
+"_REMOVECONTENT_" = "Remove Content";
+"_REMOVECONTENT_MSG_" = "Are you sure to remove this content from your Post?";
+"_DELETINGCONTENT_MSG_" = "Deleting Content...";
+"_CANCELTEXTEDITION_" = "Close text edit";
+"_CANCELTEXTEDITION_MSG_" = "Are you sure to discard the text edition?";
+"_PREPARINGFASHIONISTACONTENT_MSG_" = "Preparing Content...";
+"_NO_FASHIONISTACONTENTUPLOAD_ERROR_MSG_" = "Couldn't upload Content";
+"_NO_FASHIONISTACONTENTIMAGEUPLOAD_ERROR_MSG_" = "Couldn't upload content image";
+"_NO_FASHIONISTAPOSTPREVIEWIMAGEUPLOAD_ERROR_MSG_" = "Couldn't upload preview image";
+"_ADDPREVIEWIMAGETOPOST_BTN_" = "Tap to edit the preview image";
+"_NO_KEYWORDADDITIONTOCONTENT_ERROR_MSG_" = "Couldn't add keyword to post content";
+"_NOTVALIDTAG_" = "Your tag is not in our database yet. Please add a valid tag";
+"_ADDWARDROBE_BTN_" = "Add Wardrobe";
+"_DELETEWARDROBE_BTN_" = "Delete Wardrobe";
+"_EDITWARDROBE_BTN_" = "Edit Wardrobe";
+"_REMOVEPOSTCONTENTWARDROBE_MSG_" = "Are you sure to remove this Wardrobe Collection from your Post Content?";
+"_ADDINGWARDROBETOCONTENT_MSG_" = "Adding Wardrobe Collection to the post...";
+"_NO_WARDROBEINSERTIONINCONTENT_ERROR_MSG_" = "Couldn't add wardrobe to post content";
+"_CANTREMOVEPOSTCONTENTWARDROBE_MSG_" = "Couldn't delete post content wardrobe";
+"_EDITWARDROBE_" = "Edit Wardrobe";
+"_CANTEDITPOSTCONTENTWARDROBE_MSG_" = "Couldn't access post content wardrobe";
+"_STYLISTPOSTWARDROBE_PREFIX_" = "";
+"_DEFAULTWARDROBE_NAME_" = "My Post Wardrobe";
+"_ADDING_PRODUCTS_TO_CONTENT_WARDROBE_" = "Adding Wardrobe to Post Content";
+"_ADDING_PRODUCTS_TO_CONTENT_WARDROBE_MSG_" = "You can't perform this action while adding products to a Post Content Wardrobe";
+"_CANCELSTYLISTEDITING_" = "Profile changes";
+"_CANCELSTYLISTEDITING_MSG_" = "Are you sure to discard the changes?";
+"_CREATENEWPOST_" = "Create new Post";
+"_SELECTCATEGORYANDTITLETOPOST_" = "Select the post type and\nwrite the post title";
+"_ARTICLE_" = "Article";
+"_TUTORIAL_" = "Tutorial";
+"_REVIEW_" = "Review";
+"_TYPEPOSTTITLE_" = "Type the title for your post";
+"_MUSTINDICATEPOST_MSG_" = "Must create a post";
+"_ADDTOPAGE_" = "OK";
+"_MOVETOPAGE_" = "MOVE";
+"_ADDINGPOSTTOPAGE_MSG_" = "Adding Post to Page...";
+"_CREATEPAGE_" = "Create a Page\nto store this Post";
+"_CREATEORSELECTPAGE_" = "Create or select a Page\nto store this Post";
+"_POSTSUCCESSFULLYADDEDTOPAGE_MSG_" = "The Post was added to your Page";
+"_TAGS_BTN_" = "Tags";
+"_CONTENTPRODUCTS_BTN_" = "Products";
+"_POSTCONTENT_REPORT_TYPE_0_" = "Shows nudity";
+"_POSTCONTENT_REPORT_TYPE_1_" = "Includes drug use";
+"_POSTCONTENT_REPORT_TYPE_2_" = "Is sexually explicit";
+"_POSTCONTENT_REPORT_TYPE_3_" = "Shows violence, criminal activity or accidents";
+"_POSTCONTENT_REPORT_TYPE_4_" = "Advocates the doing of a terrorist act";
+"_PREPARINGLIVESTREAMING_MSG_" = "Preparing LiveStreaming...";
+
+// camera info
+"_NO_CAMERA_" = "Device has no camera";
+"_SELECT_SOURCE_PHOTO_" = "Select source";
+"_TAKE_PHOTO_" = "Take photo";
+"_CHOOSE_PHOTO_" = "Choose photo";
+"_CAMERA_NEEDED_FOR_AI_" = "Camera is needed for product\nAI identification";
+"_TAKE_VIDEO_" = "Take video";
+"_CHOOSE_VIDEO_" = "Choose video";
+
+// Follow
+"_FOLLOW_BTN_" = "Follow";
+"_FOLLOWING_USER_MSG_" = "Following user...";
+"_UNFOLLOWING_USER_MSG_" = "Unfollowing user...";
+"_NO_FOLLOW_ERROR_MSG_" = "Couldn't add the follow request";
+"_NO_UNFOLLOW_ERROR_MSG_" = "Couldn't add the unfollow request";
+
+// Notifications
+"_NO_NOTIFICATIONS_ERROR_MSG_" = "Didn't find any notice";
+"_NO_NEW_NOTIFICATIONS_" = "There are no new notices";
+"_NEW_NOTIFICATION_" = "You have a new notice";
+"_NEW_NOTIFICATIONS_" = "You have %d new notices";
+"_NOTIFICATION_FOLLOWER" = "New follower";
+"_NOTIFICATION_LIKE" = "New post like";
+"_NOTIFICATION_COMMENT" = "New post comment";
+"_NOTIFICATION_WARDROBE" = "New addition to wardrobe";
+"_NEWUSER_IS_FOLLOWING" = "is following you";
+"_NEWUSER_MADE_LIKE" = "liked your post";
+"_NEWUSER_MADE_COMMENT" = "commented your post";
+"_NEWUSER_ADDEDTOWARDROBE_" = "Somebody saved your post into his/her wardrobes.";// ""\@%@ saved your post \"%@\" into his/her wardrobes.";
+"_NEWUSER_ADDEDNETWORK_" = "has joined goldenspear";
+
+//Tag History
+"_USER_TAGGED_PICTURE_" = "tagged you in a picture";
+"_USER_TAGGED_COMMENT_" = "mentioned you in a comment";
+
+// Ads
+  //Search background Ad
+"_BACKGROUNDAD_TEXT_DEFAULT_" = "See it";
+"_BACKGROUNDAD_SEPARATOR_" = "  |  %@";
+"_BACKGROUNDAD_ACTION_MODEL_" = "See Profile";
+"_BACKGROUNDAD_PREACTION_MODEL_" = "See inside";
+
+
+// filter Style
+"_STYLE_" = "Style";
+"_PRODUCT_TYPE_" = "Product type";
+"_BRANDS_" = "Brand";
+"_LOCATION_" = "Location";
+"_STYLE_STYLIST_" = "Style";
+
+// profession stylists
+"_PROFESSION_0_" = "";
+"_PROFESSION_1_" = "DEFAULT";
+"_PROFESSION_2_" = "MODEL";
+"_PROFESSION_3_" = "PHOTOGRAPHER";
+"_PROFESSION_4_" = "FILMAKER";
+"_PROFESSION_5_" = "CASTING_DIRECTOR";
+"_PROFESSION_6_" = "MAKEUP_ARITST";
+"_PROFESSION_7_" = "HAIR_STYLST";
+"_PROFESSION_8_" = "WARDROBE_STYLIST";
+"_PROFESSION_9_" = "RETOUCHER";
+"_PROFESSION_10_" = "ARTIST_PAINTER";
+"_PROFESSION_11_" = "BODY_PAINTER";
+"_PROFESSION_12_" = "CLOTHING_DESIGNER";
+"_PROFESSION_13_" = "DIGITAL_ARTIST";
+"_PROFESSION_14_" = "EVENT_PLANNER_INDIVIDUAL";
+"_PROFESSION_15_" = "ADVERTISER_INDIVIDUAL";
+"_PROFESSION_16_" = "FASHION_BRAND";
+"_PROFESSION_17_" = "PUBLICATION";
+"_PROFESSION_18_" = "EVENT_PLANNER_GROUP";
+"_PROFESSION_19_" = "ADVERTISER_GROUP";
+"_PROFESSION_20_" = "BLOGGER_INDIVIDUAL";
+"_PROFESSION_21_" = "BLOGGER_GROUP";
+
+//
+"_ANONYMOUS_USER_" = "(Anonymous)";
+"_LIST_NO_DISCOVER_RESULTS_" = "No results found";
+"_LIST_NO_IMAGEPOSTS_RESULTS_" = "User has no contents";
+"_LIST_NO_VIDEOPOSTS_RESULTS_" = "There are no videos in this section";
+"_INFORMATION_PRIVATE_" = "Information is private";
+"_SUBMIT_IMAGE_TEXT_" = "Submit/Upload %@";
+"_PASSWORD_CHANGED_SUCCESSFULLY_" = "Password changed successfully";
+"_UNLINK_ACCOUNT_MSG_" = "Are you sure you want to unlink this account from Goldenspear?";
+"_NO_KEYWORD_CONTENT_RELATED_FOUND_" = "No results found for this set of tags";
+
+//Tag
+"_NO_SET_LOCATION_" = "No location set";
+"_TAG_TITLE_" = "TAG";
+"_TAG_COMMENT_TITLE" = "COMMENT";
+"_TAG_LOCATION_TITLE" = "LOCATION";
+"_TAG_EDIT_COMMENT_BTN_" = "EDIT COMMENT";
+"_TAG_EDIT_LOCATION_BTN_" = "EDIT LOCATION";
+"_TAG_USER_DESCRIPTION_" = "Tap photo to tag people. Drag to move, or tap to remove";
+"_TAG_PRODUCT_DESCRIPTION_" = "Tap to draw a bounding box around the product you want to tag.";
+"_TAG_SEE_POST_IMAGE_" = "SEE POST IMAGE";
+"_TAG_BACK_PRODUCT_SEARCH_" = "BACK TO PRODUCT SEARCH";
+//Invite Friends
+"_INVITE_RESULT_" = "INVITE SENT TO ";
+"_INVITE_EMAIL_TITLE_" = "Invite to Goldenspear";
+"_INVITE_EMAIL_BODY_" = "Try this new amazing app!\n\nhttps://itunes.apple.com/es/app/goldenspear/id966508340?mt=8";
+"_INVITE_SHORT_BODY_" = "Try this new amazing app";
+"_INVITE_TWITTER_" = "Try this new amazing app: https://itunes.apple.com/es/app/goldenspear/id966508340?mt=8";
+
+"_INVITE_SENT_SUCCESS_" = "Your invitation has been sent succesfully to your friend";
+"_INVITE_SENT_ERROR_" = "There's been an error while sending your invitation. Please try again later";
+
+"_INVITE_SENT_NOT_IMPLEMENTED_" = "We are sorry to say that this Social Network has not yet implemented direct messaging via third party apps";
+
+"_DEFAULT_NO_USERTITLE_EDIT_" = "Add your title";
+"_NO_SORTING_FILTER_" = "No Sorting";
+
+"_ENTER_WHOAREYOU_" = "You must set a profession.";
+"_ACCOUNT_VERIFY_TITLE_" = "Account Verification";
+"_ACCOUNT_VERIFY_MESSAGE_" = "\nGoldenSpear verification team will soon contact you to verify your account.\n\nOnce verification is complete, your account will be updated.";
+//live
+"_LIVE_BROADCASTING_TITLE_" = "Broadcasting live from our red our red carpet premiere!";
+"_LIVE_AGE_RANGE_" = "AGE RANGE";
+"_LIVE_ETHNICITY_" = "ETHNICITY";
+"_LIVE_AGE_VALUE_ERROR_" = "Max Age should be greater than Min Age.";
+//discover live
+"_LIVE_STREAMING_FAILED_" = "The live can't buffering.";

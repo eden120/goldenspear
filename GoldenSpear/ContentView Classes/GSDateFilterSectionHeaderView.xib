@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GSDateFilterSectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CW3-b8-u6I">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="35"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGe-PB-FC6">
+                            <rect key="frame" x="81" y="18" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwB-Em-z6m">
+                            <rect key="frame" x="0.0" y="0.0" width="160" height="35"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="UwB-Em-z6m" firstAttribute="height" secondItem="CW3-b8-u6I" secondAttribute="height" id="90P-T8-CmL"/>
+                        <constraint firstItem="UwB-Em-z6m" firstAttribute="centerX" secondItem="CW3-b8-u6I" secondAttribute="centerX" id="EpV-Og-wUv"/>
+                        <constraint firstItem="bGe-PB-FC6" firstAttribute="centerY" secondItem="CW3-b8-u6I" secondAttribute="centerY" id="Khv-TS-YyB"/>
+                        <constraint firstItem="bGe-PB-FC6" firstAttribute="centerX" secondItem="CW3-b8-u6I" secondAttribute="centerX" id="aRr-ez-kku"/>
+                        <constraint firstItem="UwB-Em-z6m" firstAttribute="width" secondItem="CW3-b8-u6I" secondAttribute="width" id="rOU-EI-Y2h"/>
+                        <constraint firstItem="UwB-Em-z6m" firstAttribute="centerY" secondItem="CW3-b8-u6I" secondAttribute="centerY" id="tWC-5x-gUo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="CW3-b8-u6I" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Tl2-GO-MG3"/>
+                <constraint firstItem="CW3-b8-u6I" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="Zyf-Qb-6XF"/>
+                <constraint firstItem="CW3-b8-u6I" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="dik-3f-CnF"/>
+                <constraint firstItem="CW3-b8-u6I" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uSI-oj-m7e"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerButton" destination="UwB-Em-z6m" id="aXr-0H-cEe"/>
+                <outlet property="nameLabel" destination="bGe-PB-FC6" id="rjf-Y2-EeN"/>
+            </connections>
+        </view>
+    </objects>
+</document>

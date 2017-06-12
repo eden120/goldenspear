@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AvantGarde-book.ttf">
+            <string>AvantGarde-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RankingAnalyticsView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R A N K I N G" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcQ-12-Qnt">
+                    <rect key="frame" x="10" y="3" width="580" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="3il-iV-J8C"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvantGarde-Book" family="AvantGarde-Book" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 OUT OF 150" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Clg-BR-MkV">
+                    <rect key="frame" x="10" y="28" width="580" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="rR6-m3-XYt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACROSS FASHION INDUSTRY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlE-g2-8qc">
+                    <rect key="frame" x="10" y="48" width="580" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="6d3-ta-Yby"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gcQ-12-Qnt" secondAttribute="trailing" constant="10" id="0i8-6l-ju9"/>
+                <constraint firstAttribute="trailing" secondItem="WlE-g2-8qc" secondAttribute="trailing" constant="10" id="0zi-0W-I90"/>
+                <constraint firstItem="Clg-BR-MkV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="CKD-lR-Ors"/>
+                <constraint firstItem="WlE-g2-8qc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="HJ9-2W-WAE"/>
+                <constraint firstItem="gcQ-12-Qnt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="efQ-hF-CaI"/>
+                <constraint firstAttribute="trailing" secondItem="Clg-BR-MkV" secondAttribute="trailing" constant="10" id="hPS-ih-9Vr"/>
+                <constraint firstItem="Clg-BR-MkV" firstAttribute="top" secondItem="gcQ-12-Qnt" secondAttribute="bottom" constant="5" id="iA3-mE-XJ2"/>
+                <constraint firstItem="gcQ-12-Qnt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="lZw-dw-EMc"/>
+                <constraint firstItem="WlE-g2-8qc" firstAttribute="top" secondItem="Clg-BR-MkV" secondAttribute="bottom" constant="5" id="wmX-HD-D2E"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

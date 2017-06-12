@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GSOptionsView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GSOptionsView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="options_top_angle.png" translatesAutoresizingMaskIntoConstraints="NO" id="DgZ-Ef-bBP">
+                    <rect key="frame" x="148" y="0.0" width="24" height="37"/>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="options_bottom_angle.png" translatesAutoresizingMaskIntoConstraints="NO" id="D7T-qY-MtL">
+                    <rect key="frame" x="148" y="563" width="24" height="37"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pjp-z0-QNC" userLabel="Options Background">
+                    <rect key="frame" x="8" y="30" width="584" height="570"/>
+                    <subviews>
+                        <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pzw-NE-QXQ" userLabel="Options Container">
+                            <rect key="frame" x="8" y="8" width="568" height="554"/>
+                            <color key="backgroundColor" red="0.63137254901960782" green="0.49019607843137253" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="154" id="piV-2F-2EV"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="piV-2F-2EV"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.63137254899999995" green="0.49019607840000001" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="pzw-NE-QXQ" firstAttribute="leading" secondItem="Pjp-z0-QNC" secondAttribute="leading" constant="8" id="FIc-VI-ZUs"/>
+                        <constraint firstAttribute="trailing" secondItem="pzw-NE-QXQ" secondAttribute="trailing" constant="8" id="g5E-lv-4QS"/>
+                        <constraint firstItem="pzw-NE-QXQ" firstAttribute="top" secondItem="Pjp-z0-QNC" secondAttribute="top" constant="8" id="jZA-Pn-cor"/>
+                        <constraint firstAttribute="bottom" secondItem="pzw-NE-QXQ" secondAttribute="bottom" constant="8" id="zQc-Iw-WPk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Pjp-z0-QNC" secondAttribute="bottom" id="76w-IJ-wfn"/>
+                <constraint firstItem="DgZ-Ef-bBP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Asg-mi-OBB"/>
+                <constraint firstItem="Pjp-z0-QNC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="C0k-xO-FeJ"/>
+                <constraint firstAttribute="bottom" secondItem="Pjp-z0-QNC" secondAttribute="bottom" id="Nuj-C1-uvR"/>
+                <constraint firstItem="Pjp-z0-QNC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="Pay-mp-ZjJ"/>
+                <constraint firstItem="DgZ-Ef-bBP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="148" id="YxM-wt-qiO"/>
+                <constraint firstItem="D7T-qY-MtL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="148" id="bWq-no-OSL"/>
+                <constraint firstAttribute="bottom" secondItem="D7T-qY-MtL" secondAttribute="bottom" id="w7f-h5-xNM"/>
+                <constraint firstAttribute="trailing" secondItem="Pjp-z0-QNC" secondAttribute="trailing" constant="8" id="zJ2-Co-J2c"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Nuj-C1-uvR"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="angleImage" destination="DgZ-Ef-bBP" id="2GN-ok-oPa"/>
+                <outlet property="angleLeadingConstraint" destination="YxM-wt-qiO" id="Gyt-Vq-JEv"/>
+                <outlet property="bottomAngleImage" destination="D7T-qY-MtL" id="cYm-Kb-G5X"/>
+                <outlet property="bottomAngleLeadingConstraint" destination="bWq-no-OSL" id="Icl-0C-TWa"/>
+                <outlet property="containerBgBottomConstraint" destination="76w-IJ-wfn" id="571-Y2-sAY"/>
+                <outlet property="containerBgTopConstraint" destination="Pay-mp-ZjJ" id="8kn-gr-F5y"/>
+                <outlet property="optionsContainer" destination="pzw-NE-QXQ" id="A48-YB-TXt"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="options_bottom_angle.png" width="24" height="37"/>
+        <image name="options_top_angle.png" width="24" height="37"/>
+    </resources>
+</document>

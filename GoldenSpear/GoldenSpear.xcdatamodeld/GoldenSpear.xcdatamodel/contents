@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G1004" minimumToolsVersion="Xcode 4.3">
+    <entity name="Ad" representedClassName="Ad" syncable="YES">
+        <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="idAd" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="postId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profileId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="video" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="width" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Availability" representedClassName="Availability" syncable="YES">
+        <attribute name="idAvailability" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="BackgroundAd" representedClassName="BackgroundAd" syncable="YES">
+        <attribute name="idBackgroundAd" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mainInformation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="secondaryInformation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Brand" representedClassName="Brand" syncable="YES">
+        <attribute name="gbin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idBrand" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="information" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="logo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="productGroupsId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="productGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProductGroup" inverseName="brands" inverseEntity="ProductGroup" syncable="YES"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product" inverseName="brand" inverseEntity="Product" syncable="YES"/>
+    </entity>
+    <entity name="City" representedClassName="City" syncable="YES">
+        <attribute name="countryId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stateregionId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="cities" inverseEntity="Country" syncable="YES"/>
+        <relationship name="stateregion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StateRegion" inverseName="cities" inverseEntity="StateRegion" syncable="YES"/>
+    </entity>
+    <entity name="Comment" representedClassName="Comment" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fashionistaPostId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fashionistaPostName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idComment" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="likeIt" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="video" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FashionistaPost" inverseName="comments" inverseEntity="FashionistaPost" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="comments" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Content" representedClassName="Content" syncable="YES">
+        <attribute name="idContent" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Country" representedClassName="Country" syncable="YES">
+        <attribute name="callingCodes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="citiesId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currencyCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currencySymbol" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idCountry" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="statesId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="cities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="City" inverseName="country" inverseEntity="City" syncable="YES"/>
+        <relationship name="states" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StateRegion" inverseName="country" inverseEntity="StateRegion" syncable="YES"/>
+    </entity>
+    <entity name="FashionistaContent" representedClassName="FashionistaContent" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fashionistaPostId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idFashionistaContent" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_height" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="image_width" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="imageText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="keywordsId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="video" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wardrobeId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="keywords" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="KeywordFashionistaContent" syncable="YES"/>
+        <relationship name="postContainedAt" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FashionistaPost" inverseName="contents" inverseEntity="FashionistaPost" syncable="YES"/>
+    </entity>
+    <entity name="FashionistaPage" representedClassName="FashionistaPage" syncable="YES">
+        <attribute name="articlesPostNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="blogURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="header_image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="header_image_height" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="header_image_width" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="idFashionistaPage" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="reviewsPostNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="stat_viewnumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="subcategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tutorialsPostNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wardrobesPostNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="fashionistaPages" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="FashionistaPost" representedClassName="FashionistaPost" syncable="YES">
+        <attribute name="commentsNum" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fashionistaPageId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idFashionistaPost" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="imagesNum" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="isFollowingAuthor" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="likesNum" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location_poi" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magazineAuthor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magazineCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="magazinePhotographer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="preview_image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preview_image_height" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="preview_image_width" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="publicPost" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="stat_viewnumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="author" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="fashionistaPosts" inverseEntity="User" syncable="YES"/>
+        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="post" inverseEntity="Comment" syncable="YES"/>
+        <relationship name="contents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FashionistaContent" inverseName="postContainedAt" inverseEntity="FashionistaContent" syncable="YES"/>
+    </entity>
+    <entity name="Feature" representedClassName="Feature" syncable="YES">
+        <attribute name="app_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="featureGroupId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hidden" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icons" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idFeature" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="productGroupsId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="featureGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FeatureGroup" inverseName="features" inverseEntity="FeatureGroup" syncable="YES"/>
+        <relationship name="productGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProductGroup" inverseName="features" inverseEntity="ProductGroup" syncable="YES"/>
+    </entity>
+    <entity name="FeatureGroup" representedClassName="FeatureGroup" syncable="YES">
+        <attribute name="app_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="featureGroupsId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="featuresId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="idFeatureGroup" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productGroupsId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="productGroupsOrderId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="featureGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FeatureGroup" inverseName="parent" inverseEntity="FeatureGroup" syncable="YES"/>
+        <relationship name="features" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Feature" inverseName="featureGroup" inverseEntity="Feature" syncable="YES"/>
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FeatureGroup" inverseName="featureGroups" inverseEntity="FeatureGroup" syncable="YES"/>
+        <relationship name="productGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProductGroup" inverseName="featuresGroup" inverseEntity="ProductGroup" syncable="YES"/>
+        <relationship name="productGroupsOrder" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FeatureGroupOrderProductGroup" inverseName="featureGroup" inverseEntity="FeatureGroupOrderProductGroup" syncable="YES"/>
+    </entity>
+    <entity name="FeatureGroupOrderProductGroup" representedClassName="FeatureGroupOrderProductGroup" syncable="YES">
+        <attribute name="featureGroupId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idFeatureGroupOrder" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="productGroupId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="featureGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FeatureGroup" inverseName="productGroupsOrder" inverseEntity="FeatureGroup" syncable="YES"/>
+        <relationship name="productGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductGroup" inverseName="featuresGroupOrder" inverseEntity="ProductGroup" syncable="YES"/>
+    </entity>
+    <entity name="Follow" representedClassName="Follow" syncable="YES">
+        <attribute name="followedId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="followingId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idFollow" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="verified" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="GSBaseElement" representedClassName="GSBaseElement" syncable="YES">
+        <attribute name="additionalInformation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="brandId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="content_type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="content_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fashionistaId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fashionistaPageId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fashionistaPostId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="idGSBaseElement" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="isFollowingAuthor" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="mainInformation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="post_createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="post_likes" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="post_location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="post_magazinecategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postowner_image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="posttype" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="premium" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="preview_image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preview_image_height" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="preview_image_width" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="product_polygons" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recommendedPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="styleId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wardrobeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wardrobeQueryId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="post_comments" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Comment" syncable="YES"/>
+    </entity>
+    <entity name="Keyword" representedClassName="Keyword" syncable="YES">
+        <attribute name="brandId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="featureId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="forPostContent" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="idKeyword" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productCategoryId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userAdded" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="resultsGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ResultsGroup" inverseName="keywords" inverseEntity="ResultsGroup" syncable="YES"/>
+    </entity>
+    <entity name="KeywordFashionistaContent" representedClassName="KeywordFashionistaContent" syncable="YES">
+        <attribute name="fashionistaContentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="idKeywordFashionistaContent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="keywordId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="xPos" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="yPos" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <relationship name="fashionistaContent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FashionistaContent" syncable="YES"/>
+        <relationship name="keyword" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Keyword" syncable="YES"/>
+    </entity>
+    <entity name="LiveStreaming" representedClassName="LiveStreaming" syncable="YES">
+        <attribute name="ageRange" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="brands" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="categories" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="cities" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="countries" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="ethnicities" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="expiration_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hashtags" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="idLiveStreaming" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitud" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="numActiveViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="numComments" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="numLikes" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="numShares" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="numViews" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="owner_picture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owner_username" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownerId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="path_video" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preview_image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preview_image_height" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="preview_image_width" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="preview_video" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="privacyId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productcategories" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="stateregions" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="typelooks" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="LiveStreamingCategory" representedClassName="LiveStreamingCategory" syncable="YES">
+        <attribute name="idLiveStreamingCategory" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="isNews" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isTrending" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="livestreamings" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numActiveLiveStreams" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="numLiveStreams" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="LiveStreamingComment" representedClassName="LiveStreamingComment" syncable="YES">
+        <attribute name="fashionista_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idLiveStreamingComment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="liveStreamingId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_picture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LiveStreamingEthnicity" representedClassName="LiveStreamingEthnicity" syncable="YES">
+        <attribute name="ethnicityId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idLiveStreamingEthnicity" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="livestreamingId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="other" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LiveStreamingInvitation" representedClassName="LiveStreamingInvitation" syncable="YES">
+        <attribute name="idLiveStreamingInvitation" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="livestreamingId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownerId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownerpicture_livestreaming" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownerusername_livestreaming" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userinvitedId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LiveStreamingLike" representedClassName="LiveStreamingLike" syncable="YES">
+        <attribute name="idLiveStreamingLike" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="liveStreamingId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LiveStreamingPrivacy" representedClassName="LiveStreamingPrivacy" syncable="YES">
+        <attribute name="idLiveStreamingPrivacy" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Notification" representedClassName="Notification" syncable="YES">
+        <attribute name="actionUserId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="actionUsername" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fashionistaPostId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idNotification" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="notificationIsNew" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
+        <attribute name="postTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="previewImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="video" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="actionUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="notifications" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="POI" representedClassName="POI" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="asciiname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="featureclass" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="featurecode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idPOI" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PostCategory" representedClassName="PostCategory" syncable="YES">
+        <attribute name="categoryId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inDiscover" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="inUser" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="PostLike" representedClassName="PostLike" syncable="YES">
+        <attribute name="idPostLike" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="postId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PostOrdering" representedClassName="PostOrdering" syncable="YES">
+        <attribute name="field" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inDiscover" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="inUser" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="orderingId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visibleInLandingPage" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="Price" representedClassName="Price" syncable="YES">
+        <attribute name="idPrice" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="Product" representedClassName="Product" syncable="YES">
+        <attribute name="brandId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idProduct" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="information" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="material" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="preview_image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preview_image_heigth" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="preview_image_width" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="profile_brand" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recommendedPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="size_array" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="sku" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stat_viewnumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="variantGroupId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="brand" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Brand" inverseName="products" inverseEntity="Brand" syncable="YES"/>
+        <relationship name="variantGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VariantGroup" syncable="YES"/>
+    </entity>
+    <entity name="ProductGroup" representedClassName="ProductGroup" syncable="YES">
+        <attribute name="app_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="brandsId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="descriptionProductGroup" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expanded" optional="YES" attributeType="Integer 32" syncable="YES"/>
+        <attribute name="featuresGroupId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="featuresGroupOrderId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="featuresId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="genders" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icon_b" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icon_g" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icon_k" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icon_m" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icon_u" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icon_w" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idProductGroup" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="parentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productGroupsId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="visible" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="brands" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Brand" inverseName="productGroups" inverseEntity="Brand" syncable="YES"/>
+        <relationship name="features" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Feature" inverseName="productGroups" inverseEntity="Feature" syncable="YES"/>
+        <relationship name="featuresGroup" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FeatureGroup" inverseName="productGroups" inverseEntity="FeatureGroup" syncable="YES"/>
+        <relationship name="featuresGroupOrder" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FeatureGroupOrderProductGroup" inverseName="productGroup" inverseEntity="FeatureGroupOrderProductGroup" syncable="YES"/>
+        <relationship name="parent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProductGroup" inverseName="productGroups" inverseEntity="ProductGroup" syncable="YES"/>
+        <relationship name="productGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProductGroup" inverseName="parent" inverseEntity="ProductGroup" syncable="YES"/>
+    </entity>
+    <entity name="ResultsGroup" representedClassName="ResultsGroup" syncable="YES">
+        <attribute name="first_order" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="idResultsGroup" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="last_order" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 64" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="searchQueryId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="keywords" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Keyword" inverseName="resultsGroups" inverseEntity="Keyword" syncable="YES"/>
+    </entity>
+    <entity name="Review" representedClassName="Review" syncable="YES">
+        <attribute name="comfort_rating" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="idReview" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="overall_rating" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="productId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quality_rating" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="video" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="reviews" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="SearchQuery" representedClassName="SearchQuery" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idSearchQuery" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="numresults" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="searchQuery" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Share" representedClassName="Share" syncable="YES">
+        <attribute name="idShare" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="sharedPostId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sharedProductId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sharingUserId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Shop" representedClassName="Shop" syncable="YES">
+        <attribute name="idShop" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="StateRegion" representedClassName="StateRegion" syncable="YES">
+        <attribute name="citiesId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="countryId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idStateRegion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentstateregionId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="statesId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="cities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="City" inverseName="stateregion" inverseEntity="City" syncable="YES"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="states" inverseEntity="Country" syncable="YES"/>
+        <relationship name="parentstateregion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StateRegion" inverseName="states" inverseEntity="StateRegion" syncable="YES"/>
+        <relationship name="states" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StateRegion" inverseName="parentstateregion" inverseEntity="StateRegion" syncable="YES"/>
+    </entity>
+    <entity name="SuggestedKeyword" representedClassName="SuggestedKeyword" syncable="YES">
+        <attribute name="idSuggestedKeyword" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="TagHistory" representedClassName="TagHistory" syncable="YES">
+        <attribute name="commentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="idTagHistory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="keywordId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postPreview" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taggedUserId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taggerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taggerPicture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TypeLook" representedClassName="TypeLook" syncable="YES">
+        <attribute name="idTypeLook" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="picture" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="address1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addressCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addressCity_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addressCityVisible" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="addressPostalCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addressState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addressState_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="agencies" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthdate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="birthdateVisible" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="bust" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="commentsId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="compensation" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="cup" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="datequeryvalidateprofile" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="datevalidatedprofile" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dress" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailvalidated" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="emailvalidatedcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ethnicity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="ethnicityVisible" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="experience" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="eyecolor" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="facebook_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facebook_token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facebook_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fashionistaBlogURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fashionistaName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fashionistaPagesId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="fashionistaTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flicker_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flicker_token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="full_picture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="genderVisible" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="genre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="genreVisible" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="haircolor" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="hairlength" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="headerMedia" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="headerType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="heightCm" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="heightM" optional="YES" attributeType="Integer 16" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="hip" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="idUser" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="instagram_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="instagram_token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="instagram_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="insteam" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="instruments" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFashionista" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isPublic" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="lastname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkedin_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkedin_token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="linkedin_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="neck" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="notificationsId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phonecallingcode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="picture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="picturepermission" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="piercings" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="pinterest_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pinterest_token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="politicalParty" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="politicalPartyVisible" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="politicalView" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="politicalViewVisible" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="relationship" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="relationshipVisible" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="religion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="religionVisible" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="reviewsId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="shoe" optional="YES" attributeType="Integer 16" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="shootnudes" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="skincolor" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="sleeve" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="snapchat_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="snapchat_token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="specialization" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tatoos" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tellusmore" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tumblr_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tumblr_token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="twitter_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="twitter_token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="twitter_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="typemeasures" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="typeprofession" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="typeprofessionId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="validatedprofile" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="waist" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="wardrobesId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Comment" inverseName="user" inverseEntity="Comment" syncable="YES"/>
+        <relationship name="fashionistaPages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FashionistaPage" inverseName="user" inverseEntity="FashionistaPage" syncable="YES"/>
+        <relationship name="fashionistaPosts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FashionistaPost" inverseName="author" inverseEntity="FashionistaPost" syncable="YES"/>
+        <relationship name="notifications" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Notification" inverseName="actionUser" inverseEntity="Notification" syncable="YES"/>
+        <relationship name="reviews" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Review" inverseName="user" inverseEntity="Review" syncable="YES"/>
+        <relationship name="wardrobes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Wardrobe" inverseName="user" inverseEntity="Wardrobe" syncable="YES"/>
+    </entity>
+    <entity name="VariantGroup" representedClassName="VariantGroup" syncable="YES">
+        <attribute name="coloursId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="idVariantGroup" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="materialsId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="variantsId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="colours" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="VariantGroupElement" syncable="YES"/>
+        <relationship name="materials" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="VariantGroupElement" syncable="YES"/>
+        <relationship name="variants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="VariantGroupElement" inverseName="variantGroup" inverseEntity="VariantGroupElement" syncable="YES"/>
+    </entity>
+    <entity name="VariantGroupElement" representedClassName="VariantGroupElement" syncable="YES">
+        <attribute name="color_image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="color_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="material_image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="material_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="product_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="variantGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VariantGroup" inverseName="variants" inverseEntity="VariantGroup" syncable="YES"/>
+    </entity>
+    <entity name="Wardrobe" representedClassName="Wardrobe" syncable="YES">
+        <attribute name="fashionistaContentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idWardrobe" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="itemsId" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preview_image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publicWardrobe" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="wardrobes" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Ad" positionX="-99927" positionY="-882" width="128" height="225"/>
+        <element name="Availability" positionX="-100089" positionY="-675" width="128" height="60"/>
+        <element name="BackgroundAd" positionX="-99918" positionY="-873" width="128" height="120"/>
+        <element name="Brand" positionX="-100026" positionY="-702" width="128" height="210"/>
+        <element name="City" positionX="-99909" positionY="-864" width="128" height="135"/>
+        <element name="Comment" positionX="-99927" positionY="-882" width="128" height="210"/>
+        <element name="Content" positionX="-100098" positionY="-684" width="128" height="105"/>
+        <element name="Country" positionX="-99927" positionY="-882" width="128" height="210"/>
+        <element name="FashionistaContent" positionX="-99711" positionY="-612" width="128" height="255"/>
+        <element name="FashionistaPage" positionX="-99720" positionY="-621" width="128" height="315"/>
+        <element name="FashionistaPost" positionX="-99729" positionY="-630" width="128" height="435"/>
+        <element name="Feature" positionX="-98892" positionY="-1035" width="128" height="210"/>
+        <element name="FeatureGroup" positionX="-98570" positionY="-828" width="128" height="240"/>
+        <element name="FeatureGroupOrderProductGroup" positionX="-98748" positionY="-600" width="128" height="133"/>
+        <element name="Follow" positionX="-99927" positionY="-882" width="128" height="105"/>
+        <element name="GSBaseElement" positionX="-99729" positionY="-630" width="128" height="495"/>
+        <element name="Keyword" positionX="-100134" positionY="-720" width="128" height="180"/>
+        <element name="KeywordFashionistaContent" positionX="-99927" positionY="-882" width="128" height="165"/>
+        <element name="LiveStreaming" positionX="-99927" positionY="-882" width="128" height="525"/>
+        <element name="LiveStreamingCategory" positionX="-99900" positionY="-855" width="128" height="165"/>
+        <element name="LiveStreamingComment" positionX="-99918" positionY="-873" width="128" height="150"/>
+        <element name="LiveStreamingEthnicity" positionX="-99891" positionY="-846" width="128" height="105"/>
+        <element name="LiveStreamingInvitation" positionX="-99909" positionY="-864" width="128" height="135"/>
+        <element name="LiveStreamingLike" positionX="-99909" positionY="-864" width="128" height="90"/>
+        <element name="LiveStreamingPrivacy" positionX="-99918" positionY="-873" width="128" height="90"/>
+        <element name="Notification" positionX="-99927" positionY="-882" width="128" height="255"/>
+        <element name="POI" positionX="-99927" positionY="-882" width="128" height="165"/>
+        <element name="PostCategory" positionX="-99927" positionY="-882" width="128" height="120"/>
+        <element name="PostLike" positionX="-99936" positionY="-891" width="128" height="90"/>
+        <element name="PostOrdering" positionX="-99918" positionY="-873" width="128" height="150"/>
+        <element name="Price" positionX="-99729" positionY="-729" width="128" height="60"/>
+        <element name="Product" positionX="-100053" positionY="-711" width="128" height="360"/>
+        <element name="ProductGroup" positionX="-99101" positionY="-729" width="128" height="450"/>
+        <element name="ResultsGroup" positionX="-99729" positionY="-630" width="128" height="150"/>
+        <element name="Review" positionX="-99540" positionY="-828" width="128" height="210"/>
+        <element name="SearchQuery" positionX="-99549" positionY="-810" width="128" height="103"/>
+        <element name="Share" positionX="-99927" positionY="-882" width="128" height="105"/>
+        <element name="Shop" positionX="-99531" positionY="-819" width="128" height="60"/>
+        <element name="StateRegion" positionX="-99918" positionY="-873" width="128" height="195"/>
+        <element name="SuggestedKeyword" positionX="-99720" positionY="-621" width="128" height="90"/>
+        <element name="TagHistory" positionX="-99927" positionY="-882" width="128" height="210"/>
+        <element name="TypeLook" positionX="-99927" positionY="-882" width="128" height="90"/>
+        <element name="User" positionX="-99540" positionY="-828" width="128" height="1680"/>
+        <element name="VariantGroup" positionX="-99927" positionY="-882" width="128" height="150"/>
+        <element name="VariantGroupElement" positionX="-99918" positionY="-873" width="128" height="165"/>
+        <element name="Wardrobe" positionX="-100107" positionY="-693" width="128" height="165"/>
+    </elements>
+</model>

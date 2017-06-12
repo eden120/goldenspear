@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LiveProductView">
+            <rect key="frame" x="0.0" y="0.0" width="439" height="552"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wQU-oc-FKf" userLabel="Container View Tag By Filter">
+                    <rect key="frame" x="0.0" y="0.0" width="439" height="552"/>
+                </containerView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wQU-oc-FKf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GX0-yJ-6Rv"/>
+                <constraint firstItem="wQU-oc-FKf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Odu-8H-6Io"/>
+                <constraint firstAttribute="bottom" secondItem="wQU-oc-FKf" secondAttribute="bottom" id="ZQf-gQ-ktR"/>
+                <constraint firstAttribute="trailing" secondItem="wQU-oc-FKf" secondAttribute="trailing" id="v4a-CB-OMe"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="containerView" destination="wQU-oc-FKf" id="Iub-Kn-nz5"/>
+            </connections>
+            <point key="canvasLocation" x="173.5" y="304"/>
+        </view>
+    </objects>
+</document>

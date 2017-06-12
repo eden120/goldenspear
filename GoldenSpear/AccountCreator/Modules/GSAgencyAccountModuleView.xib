@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GSAgencyAccountModuleView">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yvp-fM-C5z">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Q3-NP-KJD">
+                            <rect key="frame" x="0.0" y="0.0" width="400" height="0.0"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="HHz-EN-g4s"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BSu-7L-5Ps">
+                            <rect key="frame" x="0.0" y="10" width="400" height="40"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="OFFICIAL WEBSITE" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J8Q-76-mZk" userLabel="firstnameTextEdit">
+                                    <rect key="frame" x="20" y="0.0" width="360" height="40"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Dti-bS-xzo"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="iN0-l3-epB" id="6ZL-ff-5xe"/>
+                                    </connections>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUj-Jo-XkS">
+                                    <rect key="frame" x="325" y="0.0" width="46" height="40"/>
+                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                    <state key="normal" title="+ADD">
+                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="addField:" destination="iN0-l3-epB" eventType="touchUpInside" id="Boa-Gf-xWS"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="J8Q-76-mZk" secondAttribute="trailing" constant="20" id="41U-ej-6Cj"/>
+                                <constraint firstItem="J8Q-76-mZk" firstAttribute="leading" secondItem="BSu-7L-5Ps" secondAttribute="leading" constant="20" id="HYa-gs-r76"/>
+                                <constraint firstItem="dUj-Jo-XkS" firstAttribute="centerY" secondItem="J8Q-76-mZk" secondAttribute="centerY" id="Ib0-o3-Vic"/>
+                                <constraint firstItem="J8Q-76-mZk" firstAttribute="top" secondItem="BSu-7L-5Ps" secondAttribute="top" id="Xyo-fH-hie"/>
+                                <constraint firstAttribute="bottom" secondItem="J8Q-76-mZk" secondAttribute="bottom" id="aQz-Ec-84B"/>
+                                <constraint firstItem="dUj-Jo-XkS" firstAttribute="height" secondItem="J8Q-76-mZk" secondAttribute="height" id="hBA-NW-Yva"/>
+                                <constraint firstItem="dUj-Jo-XkS" firstAttribute="leading" secondItem="J8Q-76-mZk" secondAttribute="trailing" constant="-55" id="iDW-sH-Yuh"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="BSu-7L-5Ps" secondAttribute="width" id="41X-1b-vdI"/>
+                        <constraint firstAttribute="bottom" secondItem="BSu-7L-5Ps" secondAttribute="bottom" id="NQ4-TS-syY"/>
+                        <constraint firstItem="BSu-7L-5Ps" firstAttribute="leading" secondItem="Yvp-fM-C5z" secondAttribute="leading" id="OcX-XR-dOI"/>
+                        <constraint firstItem="5Q3-NP-KJD" firstAttribute="leading" secondItem="Yvp-fM-C5z" secondAttribute="leading" id="QB9-zu-3xH"/>
+                        <constraint firstItem="5Q3-NP-KJD" firstAttribute="top" secondItem="Yvp-fM-C5z" secondAttribute="top" id="RLl-jQ-Uta"/>
+                        <constraint firstAttribute="trailing" secondItem="5Q3-NP-KJD" secondAttribute="trailing" id="Tg0-XI-iJe"/>
+                        <constraint firstAttribute="trailing" secondItem="BSu-7L-5Ps" secondAttribute="trailing" id="UaN-jK-QYm"/>
+                        <constraint firstItem="BSu-7L-5Ps" firstAttribute="centerX" secondItem="Yvp-fM-C5z" secondAttribute="centerX" id="fma-xG-sK7"/>
+                        <constraint firstItem="BSu-7L-5Ps" firstAttribute="top" secondItem="5Q3-NP-KJD" secondAttribute="bottom" constant="10" id="sA9-rU-neW"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="fma-xG-sK7"/>
+                        </mask>
+                    </variation>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Yvp-fM-C5z" secondAttribute="trailing" id="Ahu-fI-WQj"/>
+                <constraint firstItem="Yvp-fM-C5z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Rgf-8B-Ot9"/>
+                <constraint firstItem="Yvp-fM-C5z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gHu-GS-xb7"/>
+                <constraint firstAttribute="bottom" secondItem="Yvp-fM-C5z" secondAttribute="bottom" id="xVx-ND-d3w"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addButton" destination="dUj-Jo-XkS" id="Ptn-80-6tc"/>
+                <outlet property="extraFieldsContainer" destination="5Q3-NP-KJD" id="JaY-O6-mII"/>
+                <outlet property="extraFieldsHeight" destination="HHz-EN-g4s" id="Mi6-kO-Aqa"/>
+                <outlet property="mainContent" destination="Yvp-fM-C5z" id="ULe-WT-pQf"/>
+                <outlet property="mainTextField" destination="J8Q-76-mZk" id="d8y-xg-Yf2"/>
+                <outlet property="mainTextFieldView" destination="BSu-7L-5Ps" id="d5o-gg-YYK"/>
+                <outletCollection property="textFields" destination="J8Q-76-mZk" id="VLo-WX-N7J"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="135"/>
+        </view>
+    </objects>
+</document>

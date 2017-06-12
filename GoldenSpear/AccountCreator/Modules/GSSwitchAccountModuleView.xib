@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GSSwitchAccountModuleView">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="78"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syy-y6-TJT">
+                    <rect key="frame" x="20" y="10" width="360" height="68"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vun-dJ-AJA">
+                            <rect key="frame" x="8" y="8" width="344" height="22"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B6v-bo-MVg">
+                            <rect key="frame" x="10" y="30" width="340" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="flo-PT-btT"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="B6v-bo-MVg" firstAttribute="leading" secondItem="Syy-y6-TJT" secondAttribute="leading" constant="10" id="2W3-ZI-pc5"/>
+                        <constraint firstItem="B6v-bo-MVg" firstAttribute="top" secondItem="vun-dJ-AJA" secondAttribute="bottom" id="Cy1-rj-01j"/>
+                        <constraint firstAttribute="trailing" secondItem="vun-dJ-AJA" secondAttribute="trailing" constant="8" id="Gcv-Pu-V90"/>
+                        <constraint firstItem="vun-dJ-AJA" firstAttribute="leading" secondItem="Syy-y6-TJT" secondAttribute="leading" constant="8" id="KPu-tc-3zA"/>
+                        <constraint firstAttribute="bottom" secondItem="B6v-bo-MVg" secondAttribute="bottom" constant="8" id="bfa-qo-f4Z"/>
+                        <constraint firstItem="vun-dJ-AJA" firstAttribute="centerX" secondItem="Syy-y6-TJT" secondAttribute="centerX" id="clh-yD-fIT"/>
+                        <constraint firstItem="vun-dJ-AJA" firstAttribute="top" secondItem="Syy-y6-TJT" secondAttribute="top" constant="8" id="pN8-ts-zEI"/>
+                        <constraint firstAttribute="trailing" secondItem="B6v-bo-MVg" secondAttribute="trailing" constant="10" id="yOO-rh-PCe"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Syy-y6-TJT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="IqW-5R-W3i"/>
+                <constraint firstAttribute="trailing" secondItem="Syy-y6-TJT" secondAttribute="trailing" constant="20" id="byt-aJ-DYC"/>
+                <constraint firstAttribute="bottom" secondItem="Syy-y6-TJT" secondAttribute="bottom" id="jZB-ui-F4G"/>
+                <constraint firstItem="Syy-y6-TJT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="nEJ-0t-WFS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mainContent" destination="Syy-y6-TJT" id="eeE-Zo-kZr"/>
+                <outlet property="optionsContainer" destination="B6v-bo-MVg" id="RQ9-6u-hAg"/>
+                <outlet property="optionsHeight" destination="flo-PT-btT" id="vLp-fz-hmI"/>
+                <outlet property="titleCaption" destination="vun-dJ-AJA" id="SuE-CJ-kto"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="42"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,12 @@
+
+/* Class = "UITextField"; placeholder = "Search"; ObjectID = "EK5-ou-miE"; */
+"EK5-ou-miE.placeholder" = "Search";
+
+/* Class = "UILabel"; text = "Please select a product feature"; ObjectID = "aQw-G0-FgN"; */
+"aQw-G0-FgN.text" = "Please select a product feature";
+
+/* Class = "UILabel"; text = "Select a feature to filter by"; ObjectID = "bap-eZ-0Az"; */
+"bap-eZ-0Az.text" = "Select a feature to filter by";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "dBm-41-xNd"; */
+"dBm-41-xNd.text" = "Label";

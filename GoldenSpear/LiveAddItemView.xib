@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AvantGarde-book.ttf">
+            <string>AvantGarde-Book</string>
+            <string>AvantGarde-Book</string>
+            <string>AvantGarde-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LiveAddItemView">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bW8-i6-5pW">
+                    <rect key="frame" x="5" y="5" width="272" height="1"/>
+                    <color key="backgroundColor" red="0.67148642015706805" green="0.67148642015706805" blue="0.67148642015706805" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="o1y-aa-68K"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ko9-ei-Wnb">
+                    <rect key="frame" x="5" y="37" width="272" height="1"/>
+                    <color key="backgroundColor" red="0.67148642020000004" green="0.67148642020000004" blue="0.67148642020000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="eN2-bh-tSa"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AkO-RC-X4g">
+                    <rect key="frame" x="5" y="104" width="272" height="1"/>
+                    <color key="backgroundColor" red="0.67148642020000004" green="0.67148642020000004" blue="0.67148642020000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="IEm-9y-bIH"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlQ-CP-QDX">
+                    <rect key="frame" x="5" y="5" width="1" height="100"/>
+                    <color key="backgroundColor" red="0.67148642020000004" green="0.67148642020000004" blue="0.67148642020000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="ENL-3s-F0L"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46E-Dw-imN">
+                    <rect key="frame" x="276" y="5" width="1" height="100"/>
+                    <color key="backgroundColor" red="0.67148642020000004" green="0.67148642020000004" blue="0.67148642020000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="Twr-57-jw8"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEARCH COUNTRY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKn-V7-mQ1">
+                    <rect key="frame" x="14" y="12" width="129" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="129" id="8uv-xd-DvW"/>
+                        <constraint firstAttribute="height" constant="21" id="NMl-xf-Rag"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvantGarde-Book" family="AvantGarde-Book" pointSize="14"/>
+                    <color key="textColor" red="0.51897905759162311" green="0.51897905759162311" blue="0.51897905759162311" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ruj-cT-xGR">
+                    <rect key="frame" x="231" y="8" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="kgS-zj-yfq"/>
+                        <constraint firstAttribute="width" constant="46" id="v7y-dr-4g8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvantGarde-Book" family="AvantGarde-Book" pointSize="13"/>
+                    <state key="normal" title="ADD">
+                        <color key="titleColor" red="0.37992882849999998" green="0.37992882849999998" blue="0.37992882849999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="All" translatesAutoresizingMaskIntoConstraints="NO" id="RS6-Qs-f5p">
+                    <rect key="frame" x="12" y="41" width="258" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="AvantGarde-Book" family="AvantGarde-Book" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RS6-Qs-f5p" firstAttribute="leading" secondItem="xlQ-CP-QDX" secondAttribute="trailing" constant="6" id="02K-gA-ChQ"/>
+                <constraint firstItem="xlQ-CP-QDX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="0Cz-Wo-Lad"/>
+                <constraint firstItem="Ruj-cT-xGR" firstAttribute="top" secondItem="bW8-i6-5pW" secondAttribute="bottom" constant="2" id="2So-VW-4ql"/>
+                <constraint firstAttribute="bottom" secondItem="xlQ-CP-QDX" secondAttribute="bottom" constant="5" id="5KY-ov-jnQ"/>
+                <constraint firstItem="aKn-V7-mQ1" firstAttribute="top" secondItem="bW8-i6-5pW" secondAttribute="bottom" constant="6" id="Anm-dp-yH5"/>
+                <constraint firstItem="46E-Dw-imN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="F2u-EY-jdi"/>
+                <constraint firstItem="AkO-RC-X4g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="IyJ-Ag-bHT"/>
+                <constraint firstItem="xlQ-CP-QDX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="L0w-mG-cS4"/>
+                <constraint firstAttribute="trailing" secondItem="Ko9-ei-Wnb" secondAttribute="trailing" constant="5" id="RKc-7o-Be2"/>
+                <constraint firstItem="Ko9-ei-Wnb" firstAttribute="top" secondItem="aKn-V7-mQ1" secondAttribute="bottom" constant="4" id="XMh-BQ-vpA"/>
+                <constraint firstAttribute="trailing" secondItem="bW8-i6-5pW" secondAttribute="trailing" constant="5" id="ZSs-P0-18x"/>
+                <constraint firstItem="bW8-i6-5pW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="aQu-oF-769"/>
+                <constraint firstItem="bW8-i6-5pW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="bOF-g7-QTs"/>
+                <constraint firstItem="46E-Dw-imN" firstAttribute="leading" secondItem="RS6-Qs-f5p" secondAttribute="trailing" constant="6" id="cUJ-O8-v2U"/>
+                <constraint firstAttribute="trailing" secondItem="AkO-RC-X4g" secondAttribute="trailing" constant="5" id="eVq-g9-5en"/>
+                <constraint firstAttribute="trailing" secondItem="46E-Dw-imN" secondAttribute="trailing" constant="5" id="hXC-iF-956"/>
+                <constraint firstItem="aKn-V7-mQ1" firstAttribute="leading" secondItem="xlQ-CP-QDX" secondAttribute="trailing" constant="8" id="j2N-Iq-kl8"/>
+                <constraint firstItem="RS6-Qs-f5p" firstAttribute="top" secondItem="Ruj-cT-xGR" secondAttribute="bottom" constant="3" id="s4A-cw-A99"/>
+                <constraint firstItem="AkO-RC-X4g" firstAttribute="top" secondItem="RS6-Qs-f5p" secondAttribute="bottom" constant="3" id="tyT-oE-Ojd"/>
+                <constraint firstAttribute="bottom" secondItem="46E-Dw-imN" secondAttribute="bottom" constant="5" id="u09-dH-Wl6"/>
+                <constraint firstAttribute="bottom" secondItem="AkO-RC-X4g" secondAttribute="bottom" constant="5" id="vw7-ZG-bFh"/>
+                <constraint firstAttribute="trailing" secondItem="Ruj-cT-xGR" secondAttribute="trailing" constant="5" id="xDh-Hu-ibA"/>
+                <constraint firstItem="Ko9-ei-Wnb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="zmt-hO-gO4"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addBtn" destination="Ruj-cT-xGR" id="Y7L-k8-nLJ"/>
+                <outlet property="contentText" destination="RS6-Qs-f5p" id="N4S-EQ-ide"/>
+                <outlet property="titleLab" destination="aKn-V7-mQ1" id="Uva-VQ-gMb"/>
+            </connections>
+            <point key="canvasLocation" x="191" y="-155"/>
+        </view>
+    </objects>
+</document>

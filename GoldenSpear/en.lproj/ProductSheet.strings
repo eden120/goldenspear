@@ -1,0 +1,96 @@
+
+/* Class = "UILabel"; text = "Ratings"; ObjectID = "2hN-HT-ucv"; */
+"2hN-HT-ucv.text" = "Ratings";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "6Wa-8a-AQC"; */
+"6Wa-8a-AQC.text" = "Name";
+
+/* Class = "UIButton"; normalTitle = "Purchase"; ObjectID = "92V-iA-eXs"; */
+"92V-iA-eXs.normalTitle" = "Purchase";
+
+/* Class = "UIButton"; normalTitle = "Open product webpage"; ObjectID = "9ga-hN-leY"; */
+"9ga-hN-leY.normalTitle" = "Open product webpage";
+
+/* Class = "UILabel"; text = "Overall:"; ObjectID = "C5l-os-N4l"; */
+"C5l-os-N4l.text" = "Overall:";
+
+/* Class = "UIButton"; normalTitle = "In-Store"; ObjectID = "EmW-su-tu9"; */
+"EmW-su-tu9.normalTitle" = "In-Store";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Hpc-1j-1lo"; */
+"Hpc-1j-1lo.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Jbl-uc-Ied"; */
+"Jbl-uc-Ied.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Availability"; ObjectID = "Lf6-oq-U92"; */
+"Lf6-oq-U92.normalTitle" = "Availability";
+
+/* Class = "UIButton"; normalTitle = "Reviews"; ObjectID = "OQg-fI-TVc"; */
+"OQg-fI-TVc.normalTitle" = "Reviews";
+
+/* Class = "UILabel"; text = "Overall"; ObjectID = "Pho-N7-TOS"; */
+"Pho-N7-TOS.text" = "Overall";
+
+/* Class = "UIButton"; normalTitle = "Product Info"; ObjectID = "QnM-Fk-ez8"; */
+"QnM-Fk-ez8.normalTitle" = "Product Info";
+
+/* Class = "UIButton"; normalTitle = "Product Info"; ObjectID = "RYE-cT-ZAi"; */
+"RYE-cT-ZAi.normalTitle" = "Product Info";
+
+/* Class = "UILabel"; text = "Comfort:"; ObjectID = "Rin-5z-aCP"; */
+"Rin-5z-aCP.text" = "Comfort:";
+
+/* Class = "UIButton"; normalTitle = "Add video"; ObjectID = "Wes-df-2zR"; */
+"Wes-df-2zR.normalTitle" = "Add video";
+
+/* Class = "UIButton"; normalTitle = "Web"; ObjectID = "WhP-2R-mty"; */
+"WhP-2R-mty.normalTitle" = "Web";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "YCy-8N-abT"; */
+"YCy-8N-abT.text" = "Description";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Z5n-hx-GEm"; */
+"Z5n-hx-GEm.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Reviews:"; ObjectID = "Z9M-z9-fp1"; */
+"Z9M-z9-fp1.normalTitle" = "Reviews:";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "b5N-fc-ldm"; */
+"b5N-fc-ldm.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UITextView"; text = "Detailed information about the product."; ObjectID = "c0n-mv-ik9"; */
+"c0n-mv-ik9.text" = "Detailed information about the product.";
+
+/* Class = "UIButton"; normalTitle = "Video"; ObjectID = "hhU-dH-0N2"; */
+"hhU-dH-0N2.normalTitle" = "Video";
+
+/* Class = "UILabel"; text = "Comfort"; ObjectID = "hts-vI-GHc"; */
+"hts-vI-GHc.text" = "Comfort";
+
+/* Class = "UIButton"; normalTitle = "Show nearest store"; ObjectID = "iMO-JX-GCC"; */
+"iMO-JX-GCC.normalTitle" = "Show nearest store";
+
+/* Class = "UIButton"; normalTitle = "Find similar products"; ObjectID = "lGt-RT-zJ7"; */
+"lGt-RT-zJ7.normalTitle" = "Find similar products";
+
+/* Class = "UILabel"; text = "Quality"; ObjectID = "lmG-0I-8is"; */
+"lmG-0I-8is.text" = "Quality";
+
+/* Class = "UILabel"; text = "Quality:"; ObjectID = "mc0-hL-62p"; */
+"mc0-hL-62p.text" = "Quality:";
+
+/* Class = "UIButton"; normalTitle = "All"; ObjectID = "n0C-9P-3yp"; */
+"n0C-9P-3yp.normalTitle" = "All";
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "pD0-UE-Y95"; */
+"pD0-UE-Y95.text" = "Location";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "pSU-p3-tJE"; */
+"pSU-p3-tJE.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Add Review"; ObjectID = "pk4-sh-UrF"; */
+"pk4-sh-UrF.normalTitle" = "Add Review";
+
+/* Class = "UIButton"; normalTitle = "Availability"; ObjectID = "uH9-QF-Zg3"; */
+"uH9-QF-Zg3.normalTitle" = "Availability";

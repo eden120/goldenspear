@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GSContentSectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOx-XV-S60">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhG-wM-2XT">
+                            <rect key="frame" x="46" y="7" width="0.0" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="YJ0-Nr-EZF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qRO-CO-rJh">
+                            <rect key="frame" x="8" y="7" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="arB-RI-XPU"/>
+                                <constraint firstAttribute="width" constant="30" id="mod-lF-6Tr"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMR-tP-73E">
+                            <rect key="frame" x="46" y="25" width="0.0" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="12" id="JFD-Bg-RyN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="10"/>
+                            <color key="textColor" red="0.69803921570000005" green="0.56078431370000004" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AW-bh-Zz6">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <connections>
+                                <action selector="headerTouched:" destination="iN0-l3-epB" eventType="touchUpInside" id="Xql-Up-vVO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.94999999999999996" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="qRO-CO-rJh" firstAttribute="centerY" secondItem="eOx-XV-S60" secondAttribute="centerY" id="4Aw-4k-hDe"/>
+                        <constraint firstItem="7AW-bh-Zz6" firstAttribute="width" secondItem="eOx-XV-S60" secondAttribute="width" id="9eN-Kx-wEW"/>
+                        <constraint firstItem="yhG-wM-2XT" firstAttribute="top" secondItem="qRO-CO-rJh" secondAttribute="top" id="Gz6-yG-uUp"/>
+                        <constraint firstItem="qRO-CO-rJh" firstAttribute="leading" secondItem="eOx-XV-S60" secondAttribute="leading" constant="8" id="HEY-if-LvM"/>
+                        <constraint firstItem="7AW-bh-Zz6" firstAttribute="centerX" secondItem="eOx-XV-S60" secondAttribute="centerX" id="IQe-kB-WzF"/>
+                        <constraint firstItem="jMR-tP-73E" firstAttribute="leading" secondItem="yhG-wM-2XT" secondAttribute="leading" id="OEZ-mr-nY3"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jMR-tP-73E" secondAttribute="trailing" constant="8" id="Rk8-vT-VvY"/>
+                        <constraint firstItem="7AW-bh-Zz6" firstAttribute="height" secondItem="eOx-XV-S60" secondAttribute="height" id="Wfp-8E-l9y"/>
+                        <constraint firstItem="7AW-bh-Zz6" firstAttribute="centerY" secondItem="eOx-XV-S60" secondAttribute="centerY" id="WoF-9F-Sh0"/>
+                        <constraint firstItem="yhG-wM-2XT" firstAttribute="leading" secondItem="qRO-CO-rJh" secondAttribute="trailing" constant="8" id="Wt7-J8-Pcz"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yhG-wM-2XT" secondAttribute="trailing" constant="8" id="dlu-fd-atW"/>
+                        <constraint firstItem="jMR-tP-73E" firstAttribute="bottom" secondItem="qRO-CO-rJh" secondAttribute="bottom" id="vae-XR-gTf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="eOx-XV-S60" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EEI-El-QYM"/>
+                <constraint firstItem="eOx-XV-S60" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ZVo-jN-Ss1"/>
+                <constraint firstItem="eOx-XV-S60" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="tnU-Dk-mnU"/>
+                <constraint firstItem="eOx-XV-S60" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="vae-mT-Oai"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundView" destination="eOx-XV-S60" id="7CE-Sb-pkh"/>
+                <outlet property="headerImage" destination="qRO-CO-rJh" id="3am-lI-wNR"/>
+                <outlet property="headerSubtitle" destination="jMR-tP-73E" id="EWZ-V0-jt9"/>
+                <outlet property="headerTitle" destination="yhG-wM-2XT" id="Jm3-KS-spx"/>
+                <outlet property="titleImageWidthConstraint" destination="mod-lF-6Tr" id="qnf-Hp-hTh"/>
+            </connections>
+        </view>
+    </objects>
+</document>

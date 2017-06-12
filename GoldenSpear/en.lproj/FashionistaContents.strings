@@ -1,0 +1,144 @@
+
+/* Class = "UILabel"; text = "Save Location:"; ObjectID = "1hM-Fn-bfy"; */
+"1hM-Fn-bfy.text" = "Save Location:";
+
+/* Class = "UILabel"; text = "Profile"; ObjectID = "2BE-2Z-0Mm"; */
+"2BE-2Z-0Mm.text" = "Profile";
+
+/* Class = "UILabel"; text = "Save Date:"; ObjectID = "2ah-cS-YKz"; */
+"2ah-cS-YKz.text" = "Save Date:";
+
+/* Class = "UIButton"; normalTitle = "GoToFollowers"; ObjectID = "3M1-Zt-2Ho"; */
+"3M1-Zt-2Ho.normalTitle" = "GoToFollowers";
+
+/* Class = "UIButton"; normalTitle = "0"; ObjectID = "4Ku-35-HpI"; */
+"4Ku-35-HpI.normalTitle" = "0";
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "6se-Ut-noQ"; */
+"6se-Ut-noQ.text" = "Location";
+
+/* Class = "UILabel"; text = "Wardrobes"; ObjectID = "6vV-xx-8ae"; */
+"6vV-xx-8ae.text" = "Wardrobes";
+
+/* Class = "UIButton"; normalTitle = "Add video"; ObjectID = "9Gx-Kk-YNG"; */
+"9Gx-Kk-YNG.normalTitle" = "Add video";
+
+/* Class = "UIButton"; normalTitle = "Like"; ObjectID = "9oG-b7-Shn"; */
+"9oG-b7-Shn.normalTitle" = "Like";
+
+/* Class = "UILabel"; text = "LOOKS"; ObjectID = "CYU-YJ-u2I"; */
+"CYU-YJ-u2I.text" = "LOOKS";
+
+/* Class = "UIButton"; normalTitle = "0"; ObjectID = "ClE-TL-sa1"; */
+"ClE-TL-sa1.normalTitle" = "0";
+
+/* Class = "UILabel"; text = "Category:"; ObjectID = "Eo2-79-CV6"; */
+"Eo2-79-CV6.text" = "Category:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "FSb-9g-Nak"; */
+"FSb-9g-Nak.text" = "Label";
+
+/* Class = "UILabel"; text = "Comments and Likes"; ObjectID = "HC7-z8-as2"; */
+"HC7-z8-as2.text" = "Comments and Likes";
+
+/* Class = "UILabel"; text = "Reviews"; ObjectID = "JRo-MB-sFv"; */
+"JRo-MB-sFv.text" = "Reviews";
+
+/* Class = "UIButton"; normalTitle = "GoToFollowing"; ObjectID = "K6K-zV-8zh"; */
+"K6K-zV-8zh.normalTitle" = "GoToFollowing";
+
+/* Class = "UIButton"; normalTitle = "FOLLOW"; ObjectID = "KJh-Kq-a3Q"; */
+"KJh-Kq-a3Q.normalTitle" = "FOLLOW";
+
+/* Class = "UIButton"; normalTitle = "BACK"; ObjectID = "LGZ-n3-Djr"; */
+"LGZ-n3-Djr.normalTitle" = "BACK";
+
+/* Class = "UILabel"; text = "Post Title"; ObjectID = "OlA-FM-nfS"; */
+"OlA-FM-nfS.text" = "Post Title";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "QTc-Xk-igB"; */
+"QTc-Xk-igB.text" = "Label";
+
+/* Class = "UISegmentedControl"; WsC-GX-RNT.segmentTitles[0] = "Article"; ObjectID = "WsC-GX-RNT"; */
+"WsC-GX-RNT.segmentTitles[0]" = "Article";
+
+/* Class = "UISegmentedControl"; WsC-GX-RNT.segmentTitles[1] = "Review"; ObjectID = "WsC-GX-RNT"; */
+"WsC-GX-RNT.segmentTitles[1]" = "Review";
+
+/* Class = "UISegmentedControl"; WsC-GX-RNT.segmentTitles[2] = "Tutorial"; ObjectID = "WsC-GX-RNT"; */
+"WsC-GX-RNT.segmentTitles[2]" = "Tutorial";
+
+/* Class = "UIButton"; normalTitle = "0"; ObjectID = "Y1g-4M-cSC"; */
+"Y1g-4M-cSC.normalTitle" = "0";
+
+/* Class = "UILabel"; text = "Post type:"; ObjectID = "YoF-19-nUt"; */
+"YoF-19-nUt.text" = "Post type:";
+
+/* Class = "UITextField"; placeholder = " Add new category?"; ObjectID = "YxQ-VR-u0Q"; */
+"YxQ-VR-u0Q.placeholder" = " Add new category?";
+
+/* Class = "UIButton"; normalTitle = "Add Comment"; ObjectID = "aJ6-ev-Wy9"; */
+"aJ6-ev-Wy9.normalTitle" = "Add Comment";
+
+/* Class = "UILabel"; text = "FOLLOWING"; ObjectID = "aMV-tn-9cy"; */
+"aMV-tn-9cy.text" = "FOLLOWING";
+
+/* Class = "UITextField"; placeholder = "Add tag"; ObjectID = "als-sN-MOu"; */
+"als-sN-MOu.placeholder" = "Add tag";
+
+/* Class = "UILabel"; text = "Comment"; ObjectID = "ceK-MD-bzo"; */
+"ceK-MD-bzo.text" = "Comment";
+
+/* Class = "UIButton"; normalTitle = "Video"; ObjectID = "dE7-LR-g46"; */
+"dE7-LR-g46.normalTitle" = "Video";
+
+/* Class = "UILabel"; text = "Articles"; ObjectID = "eKQ-qi-Vdi"; */
+"eKQ-qi-Vdi.text" = "Articles";
+
+/* Class = "UIButton"; normalTitle = "GoToPosts"; ObjectID = "eiS-gD-MDc"; */
+"eiS-gD-MDc.normalTitle" = "GoToPosts";
+
+/* Class = "UIButton"; normalTitle = "Like"; ObjectID = "fnA-et-ybz"; */
+"fnA-et-ybz.normalTitle" = "Like";
+
+/* Class = "UILabel"; text = "Tutorials"; ObjectID = "gQF-M8-5Tr"; */
+"gQF-M8-5Tr.text" = "Tutorials";
+
+/* Class = "UILabel"; text = "Post title:"; ObjectID = "gWh-eg-aeH"; */
+"gWh-eg-aeH.text" = "Post title:";
+
+/* Class = "UIButton"; normalTitle = "ADD TO PAGE"; ObjectID = "hvI-be-3NP"; */
+"hvI-be-3NP.normalTitle" = "ADD TO PAGE";
+
+/* Class = "UILabel"; text = "You dont't have any Page yet!"; ObjectID = "l7d-IG-9d5"; */
+"l7d-IG-9d5.text" = "You dont't have any Page yet!";
+
+/* Class = "UILabel"; text = "FOLLOWERS"; ObjectID = "lDH-dB-WbL"; */
+"lDH-dB-WbL.text" = "FOLLOWERS";
+
+/* Class = "UIButton"; normalTitle = "Edit page title"; ObjectID = "ltz-QV-Ycr"; */
+"ltz-QV-Ycr.normalTitle" = "Edit page title";
+
+/* Class = "UITextView"; text = "Comment"; ObjectID = "mky-H0-exz"; */
+"mky-H0-exz.text" = "Comment";
+
+/* Class = "UILabel"; text = "Create or select a Page to store this item"; ObjectID = "nxr-sS-qdD"; */
+"nxr-sS-qdD.text" = "Create or select a Page to store this item";
+
+/* Class = "UITextField"; placeholder = "Type new title"; ObjectID = "oE2-hb-6Hl"; */
+"oE2-hb-6Hl.placeholder" = "Type new title";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "ppa-a9-xcN"; */
+"ppa-a9-xcN.placeholder" = "Username";
+
+/* Class = "UILabel"; text = "Location and Date"; ObjectID = "prR-fI-Sgp"; */
+"prR-fI-Sgp.text" = "Location and Date";
+
+/* Class = "UIButton"; normalTitle = "0"; ObjectID = "rGs-yK-s80"; */
+"rGs-yK-s80.normalTitle" = "0";
+
+/* Class = "UITextField"; placeholder = "Website"; ObjectID = "re5-SS-Lpy"; */
+"re5-SS-Lpy.placeholder" = "Website";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "tSs-u4-XnX"; */
+"tSs-u4-XnX.text" = "Name";

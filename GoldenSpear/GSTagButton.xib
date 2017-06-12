@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Vyu-dJ-sbZ" customClass="GSTagButton">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99c-xT-VWR" customClass="GSTagButton">
+                    <rect key="frame" x="0.0" y="-1" width="500" height="31"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                    <state key="normal" title="sadfasdfasdfasdf" backgroundImage="tagBackground"/>
+                    <state key="selected" backgroundImage="userTagBackground">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="99c-xT-VWR" firstAttribute="width" secondItem="Vyu-dJ-sbZ" secondAttribute="width" id="0MD-zG-4ws"/>
+                <constraint firstItem="99c-xT-VWR" firstAttribute="height" secondItem="Vyu-dJ-sbZ" secondAttribute="height" id="WO7-IV-jcO"/>
+                <constraint firstItem="99c-xT-VWR" firstAttribute="centerY" secondItem="Vyu-dJ-sbZ" secondAttribute="centerY" id="aqQ-g2-ela"/>
+                <constraint firstItem="99c-xT-VWR" firstAttribute="centerX" secondItem="Vyu-dJ-sbZ" secondAttribute="centerX" id="jQP-tm-PdQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tagBackground" width="91" height="25"/>
+        <image name="userTagBackground" width="29" height="25"/>
+    </resources>
+</document>

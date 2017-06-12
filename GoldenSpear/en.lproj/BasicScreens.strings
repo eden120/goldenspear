@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Notification date"; ObjectID = "6ko-r7-haO"; */
+"6ko-r7-haO.text" = "Notification date";
+
+/* Class = "UIButton"; normalTitle = "Retake"; ObjectID = "YUW-Pn-76H"; */
+"YUW-Pn-76H.normalTitle" = "Retake";
+
+/* Class = "UILabel"; text = "Notification Text"; ObjectID = "gnf-U9-BIf"; */
+"gnf-U9-BIf.text" = "Notification Text";
+
+/* Class = "UIButton"; normalTitle = "Action"; ObjectID = "iDK-OS-dWf"; */
+"iDK-OS-dWf.normalTitle" = "Action";

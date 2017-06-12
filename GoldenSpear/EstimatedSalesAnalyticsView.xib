@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AvantGarde-book.ttf">
+            <string>AvantGarde-Book</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EstimatedSalesAnalyticsView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E S T I M A T E D  S A L E S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ct6-mH-gZc">
+                    <rect key="frame" x="10" y="3" width="580" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="gnP-Ma-bj1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvantGarde-Book" family="AvantGarde-Book" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10,483" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axb-ov-2tz">
+                    <rect key="frame" x="10" y="28" width="580" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="ZtY-jD-rwh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bM5-8s-EWd">
+                    <rect key="frame" x="10" y="48" width="580" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="g9C-FA-U7e"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bM5-8s-EWd" firstAttribute="top" secondItem="Axb-ov-2tz" secondAttribute="bottom" constant="5" id="B4V-mo-C5k"/>
+                <constraint firstItem="ct6-mH-gZc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="B5Y-7i-4Wg"/>
+                <constraint firstAttribute="trailing" secondItem="bM5-8s-EWd" secondAttribute="trailing" constant="10" id="PPm-Dd-a0s"/>
+                <constraint firstAttribute="trailing" secondItem="Axb-ov-2tz" secondAttribute="trailing" constant="10" id="XCC-Rd-pkW"/>
+                <constraint firstAttribute="trailing" secondItem="ct6-mH-gZc" secondAttribute="trailing" constant="10" id="bio-26-0Gc"/>
+                <constraint firstItem="Axb-ov-2tz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="cPQ-xH-ufG"/>
+                <constraint firstItem="bM5-8s-EWd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="cS6-1Y-XB0"/>
+                <constraint firstItem="Axb-ov-2tz" firstAttribute="top" secondItem="ct6-mH-gZc" secondAttribute="bottom" constant="5" id="eYm-fR-1fX"/>
+                <constraint firstItem="ct6-mH-gZc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="is5-wN-TxC"/>
+                <constraint firstItem="bM5-8s-EWd" firstAttribute="top" secondItem="ct6-mH-gZc" secondAttribute="bottom" constant="5" id="ojo-LW-W5d"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ojo-LW-W5d"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,27 @@
+
+/* Class = "UITextField"; placeholder = "Type a new name for this Wardrobe Collection"; ObjectID = "04c-oX-Jp4"; */
+"04c-oX-Jp4.placeholder" = "Type a new name for this Wardrobe Collection";
+
+/* Class = "UILabel"; text = "   There are elements in your Wardrobe Bin!\n   Please select and add them to the desired Wardrobe Collection."; ObjectID = "5cd-cF-6DA"; */
+"5cd-cF-6DA.text" = "   There are elements in your Wardrobe Bin!\n   Please select and add them to the desired Wardrobe Collection.";
+
+/* Class = "UILabel"; text = "Your Wardrobe doesn't contain any collection yet!"; ObjectID = "HaQ-FO-fzG"; */
+"HaQ-FO-fzG.text" = "Your Wardrobe doesn't contain any collection yet!";
+
+/* Class = "UITextField"; placeholder = "New Collection"; ObjectID = "LFr-a3-BZ0"; */
+"LFr-a3-BZ0.placeholder" = "New Collection";
+
+/* Class = "UIButton"; normalTitle = "ADD TO WARDROBE"; ObjectID = "hkt-L1-kog"; */
+"hkt-L1-kog.normalTitle" = "ADD TO WARDROBE";
+
+/* Class = "UILabel"; text = "Create or select a Wardrobe Collection\nto store this item"; ObjectID = "lSR-BH-bqF"; */
+"lSR-BH-bqF.text" = "Create or select a Wardrobe Collection\nto store this item";
+
+/* Class = "UIButton"; normalTitle = "Remove"; ObjectID = "md9-3d-iGy"; */
+"md9-3d-iGy.normalTitle" = "Remove";
+
+/* Class = "UIButton"; normalTitle = "CANCEL"; ObjectID = "nzH-s9-7vI"; */
+"nzH-s9-7vI.normalTitle" = "CANCEL";
+
+/* Class = "UILabel"; text = "Item Title"; ObjectID = "uZz-cc-dB4"; */
+"uZz-cc-dB4.text" = "Item Title";
